@@ -1,3 +1,83 @@
 * {
-    
+    margin: 0 auto;
+}
+
+/*------------------------------*/
+.header {
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 134px;
+    background-color: #EDF2EC;
+    display: flex;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    flex: 0 0 auto;
+}
+
+.logo img {
+    display: flex;
+    flex: 0 0 auto;
+    width: 20px;
+    height: 20px;
+}
+
+ul.nav-list {
+    display: flex;
+    list-style-type: none;
+    text-transform: capitalize;
+}
+
+/*------------------------------*/
+.welcome {
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 532px;
+    background-color: #EDF2EC;
+}
+
+/*------------------------------*/
+.who-we-are {
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 666px;
+    background-color: #FFFFFF;
+}
+
+/*------------------------------*/
+.service-projects {
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 1300px;
+    background-color: #EDF2EC;
+}
+
+/*------------------------------*/
+.prices {
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 560px;
+    background-color: #FFFFFF;
+}
+
+/*------------------------------*/
+.contact-us {
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 550px;
+    background-color: #EDF2EC;
+}
+
+/*------------------------------*/
+.footer {
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 130px;
+    background-color: #FFFFFF;
 }
