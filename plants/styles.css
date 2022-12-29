@@ -1,3 +1,9 @@
+@font-face {
+    font-family: 'Inika'; 
+    src: url(./assets/fonts/Inika-Regular.ttf);
+  }
+
+
 * {
     margin: 0 auto;
 }
@@ -9,16 +15,13 @@
     height: 134px;
     background-color: #EDF2EC;
     display: flex;
-}
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
+    align-items: center;
 }
 
 .logo {
     display: flex;
     flex: 0 0 auto;
+    font-family: Inika;
 }
 
 .logo img {
@@ -30,8 +33,22 @@
 
 ul.nav-list {
     display: flex;
+    font-family: Inika;
     list-style-type: none;
     text-transform: capitalize;
+    width: 452px;
+}
+
+a.nav-a {
+    text-decoration: none;
+}
+
+a.active {
+    color: #E06733;
+}
+
+a:hover {
+    color: #E06733;
 }
 
 /*------------------------------*/
