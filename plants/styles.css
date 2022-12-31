@@ -3,6 +3,16 @@
     src: url(./assets/fonts/Inika-Regular.ttf);
   }
 
+  @font-face {
+    font-family: 'Inter-Regular'; 
+    src: url(./assets/fonts/Inter-Regular.ttf);
+  }
+
+  @font-face {
+    font-family: 'Inter-Bold'; 
+    src: url(./assets/fonts/Inter-Bold.ttf);
+  }
+
 
 * {
     margin: 0 auto;
@@ -31,6 +41,11 @@
     height: 20px;
 }
 
+.logo p {
+    font-size: 16px;
+    color: #000000;
+}
+
 ul.nav-list {
     display: flex;
     font-family: Inika;
@@ -41,6 +56,8 @@ ul.nav-list {
 
 a.nav-a {
     text-decoration: none;
+    font-size: 16px;
+    color: #010201;
 }
 
 a.active {
@@ -57,6 +74,50 @@ a:hover {
     margin: 0 auto;
     height: 532px;
     background-color: #EDF2EC;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+img.leafs {
+    width: 448.8px;
+    height: 407.36px;
+}
+
+.plants-text {
+    width: 549px;
+    height: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    color: #717171;
+}
+
+.plants-text h1 {
+    font-family: Inter-Bold;
+    margin-left: 0;
+}
+
+.plants-text span {
+    color: #499A18;
+}
+
+.plants-text p {
+    font-family: Inter-Regular;
+    color: #636060;
+}
+
+.plants-text button {
+    font-family: Inter-Regular;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-left: 0;
+    color: #000000;
+    border-color: #E06733;
+    border-radius: 5px;
+    width: 158px;
+    height: 44px;
 }
 
 /*------------------------------*/
