@@ -97,6 +97,7 @@ img.leafs {
 .plants-text h1 {
     font-family: Inter-Bold;
     margin-left: 0;
+    font-size: 45px;
 }
 
 .plants-text span {
@@ -105,6 +106,7 @@ img.leafs {
 
 .plants-text p {
     font-family: Inter-Regular;
+    font-size: 20px;
     color: #636060;
 }
 
@@ -114,22 +116,64 @@ img.leafs {
     text-transform: uppercase;
     margin-left: 0;
     color: #000000;
-    border-color: #E06733;
+    border: 2px solid #E06733;
     border-radius: 5px;
     width: 158px;
     height: 44px;
 }
 
 /*------------------------------*/
-.who-we-are {
+.about {
     max-width: 1440px;
     margin: 0 auto;
     height: 666px;
     background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.gardeners-text {
+    width: 605px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.gardeners-text h2 {
+    margin-left: 0; 
+    font-family: Inika;
+    font-size: 40px;
+    color: #499A18;
+}
+
+.gardeners-text span {
+    color: #E06733;
+}
+
+.gardeners-text p {
+    font-family: Inter-Regular;
+    font-size: 20px;
+    color: #636060;
+}
+
+
+
+
+
+
+
+
+
+img.housepants {
+    width: 464px;
+    height: 479px;
 }
 
 /*------------------------------*/
-.service-projects {
+.service {
     max-width: 1440px;
     margin: 0 auto;
     height: 1300px;
@@ -145,7 +189,7 @@ img.leafs {
 }
 
 /*------------------------------*/
-.contact-us {
+.contacts {
     max-width: 1440px;
     margin: 0 auto;
     height: 550px;
