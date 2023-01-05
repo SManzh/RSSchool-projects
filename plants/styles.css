@@ -197,7 +197,6 @@ img.houseplants {
     font-size: 20px;
     text-transform: capitalize;
     color: #E06733;
-    border: 1px solid #E06733;
     border-radius: 5px;
     width: 161px;
     height: 50px;
@@ -239,12 +238,89 @@ div.capt p:nth-child(2) {
     color: #717171;
 }
 
+.gardeners {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.gardeners p {
+    font-family: Inter-Bold;
+    font-size: 40px;
+    color: #000000;
+    width: 452px;
+}
+
+.gardeners span {
+    color: #499A18;
+}
+
 /*------------------------------*/
-.prices {
+.price {
     max-width: 1440px;
     margin: 0 auto;
     height: 560px;
     background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+}
+
+.prices {
+    display: flex;
+    flex-direction: column;
+}
+
+.prices h2 {
+    font-family: Inter-Bold;
+    font-size: 40px;
+    color: #000000;
+    margin-left: 0;
+}
+
+.price-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 40px;
+    margin-top: 50px;
+    width: 332px;
+    height: 282.01px;
+    border: 2px solid #D9D9D9; 
+    border-radius: 20px;
+}
+
+.price-buttons button {
+    width: 250px;
+    height: 50px;
+    border: none;
+    border-radius: 20px;
+    background-color: #EDF2EC;
+    font-family: Inter-Bold;
+    font-size: 20px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button.contact-us {
+    margin-right: 0;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 162px;
+    height: 50px;
+    border: 2px solid #E06733;
+    border-radius: 5px;
+    font-family: Inika-Bold;
+    font-size: 20px;
+    color: #E06733;
+}
+
+.gardeners img {
+    width: 152px;
+    height: 174.99px;
+    margin-right: 0;
 }
 
 /*------------------------------*/
