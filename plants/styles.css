@@ -349,9 +349,18 @@ div.contact-woman {
     margin-top: 60px;
 }
 
-select.city {
+button.city {
     width: 450px;
     height: 50px;
+    margin-top: 148px;
+    border: none;
+    background-color: #D6E7D2;
+    font-family: Inter-Regular;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.5);
 }
 
 
