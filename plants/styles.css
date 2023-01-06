@@ -4,6 +4,11 @@
   }
 
   @font-face {
+    font-family: 'Inika-Bold'; 
+    src: url(./assets/fonts/Inika-Bold.ttf);
+  }
+
+  @font-face {
     font-family: 'Inter-Regular'; 
     src: url(./assets/fonts/Inter-Regular.ttf);
   }
@@ -329,7 +334,26 @@ button.contact-us {
     margin: 0 auto;
     height: 550px;
     background-color: #EDF2EC;
+    display: flex;
+    justify-content: space-between;
 }
+
+div.contact-woman {
+    margin-top: 53px;
+}
+
+.contacts h2 {
+    font-family: Inika-Bold;
+    font-size: 40px;
+    color: #499A18;
+    margin-top: 60px;
+}
+
+select.city {
+    width: 450px;
+    height: 50px;
+}
+
 
 /*------------------------------*/
 .footer {
@@ -337,4 +361,33 @@ button.contact-us {
     margin: 0 auto;
     height: 130px;
     background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.git {
+    display: flex;
+    justify-content: space-between;
+    width: 182px;
+    margin-left: 109px;
+    margin-top: 40px;
+    font-family: Inter-Regular;
+    font-size: 20px;
+}
+
+.git a {
+    text-decoration: none;
+}
+
+.footer p.rss {
+    margin-top: 40px;
+    font-family: Inter-Regular;
+    font-size: 20px;
+}
+
+.footer .icons {
+    width: 188px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
 }
