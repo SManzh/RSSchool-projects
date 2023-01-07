@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plants</title>
     <link href="./styles.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="./assets/images/icons-plant-16.png" type="image/x-icon">
 </head>
 <body>
     <header class="header">
@@ -15,16 +16,16 @@
         </div>
         <nav class="navigation">
             <ul class="nav-list">
-                <li class="nav-point"><a href="" class="active nav-a" >home</a></li>
-                <li class="nav-point"><a href="" class="nav-a">about us</a></li>
-                <li class="nav-point"><a href="" class="nav-a">service</a></li>
-                <li class="nav-point"><a href="" class="nav-a">price</a></li>
-                <li class="nav-point"><a href="" class="nav-a">contacts</a></li>
+                <li class="nav-point"><a href="#home" class="active nav-a" >home</a></li>
+                <li class="nav-point"><a href="#about" class="nav-a">about us</a></li>
+                <li class="nav-point"><a href="#service" class="nav-a">service</a></li>
+                <li class="nav-point"><a href="#prices" class="nav-a">price</a></li>
+                <li class="nav-point"><a href="#contacts" class="nav-a">contacts</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="welcome">
+        <section id="home" class="welcome">
             <div><img class="leafs" src="./assets/images/leafs.png" alt="leafs"></div>
             <div class="plants-text">
                 <h1>We grow <span>plants</span> and give you oxygen</h1>
@@ -34,7 +35,7 @@
                 <button>learn more</button>
             </div>
         </section>
-        <section class="about">
+        <section id="about" class="about">
             <div class="gardeners-text">
                 <h2>We are <span>professional experienced</span> gardeners</h2>
                 <p>Lorem Ipsum is simply dummy text of the printing and 
@@ -46,10 +47,10 @@
                     essentially unchanged.</p>
             </div>
             <div>
-                <img class="houseplants" src="./assets/images/houseplant 1.png" alt="houseplant">
+                <img class="houseplants" src="./assets/images/houseplant1.png" alt="houseplant">
             </div>
         </section>
-        <section class="service">
+        <section id="service" class="service">
             <div class="service-head">
                 <h2>Service and our projects</h2>
                 <div class="service-buttons">
@@ -115,13 +116,13 @@
                 </div>          
             </div>
         </section>
-        <section class="price">
-            <div class="prices">
+        <section id="prices" class="prices">
+            <div class="price">
                 <h2>Prices</h2>
                 <div class="price-buttons">
-                    <button><p>Basics</p><img src="./assets/images/accordion_btn.svg" alt="arrow"></button>
-                    <button><p>Standard</p><img src="./assets/images/accordion_btn.svg" alt="arrow"></button>
-                    <button><p>Pro care</p><img src="./assets/images/accordion_btn.svg" alt="arrow"></button>
+                    <div>Basics<img src="./assets/images/accordion_btn.svg" alt="arrow"></div>
+                    <div>Standard<img src="./assets/images/accordion_btn.svg" alt="arrow"></div>
+                    <div>Pro care<img src="./assets/images/accordion_btn.svg" alt="arrow"></div>
                 </div>
             </div>
             <div class="gardeners">
@@ -130,25 +131,25 @@
                 <img src="./assets/images/leafs_1.png" alt="leafs">
             </div>
         </section>
-        <section class="contacts">
-            <div class="contact-woman"><img src="./assets/images/contact_woman 1.png" alt="woman"></div>
+        <section id="contacts" class="contacts">
+            <div class="contact-woman"><img src="./assets/images/contact_woman1.png" alt="woman"></div>
             <h2>Contact us</h2>
-            <button class="city"><p>City</p><img src="./assets/images/accordion_btn.svg" alt="arrow"></button>
+            <div class="city"><p>City</p><img src="./assets/images/accordion_btn.svg" alt="arrow"></div>
         </section>
     </main>
     <footer class="footer">
         <div class="git">
             <p>©</p>
             <p>2022</p>
-            <a href="http://github.com/rolling-scopes-school/">github</a>
+            <a href="https://rs.school/js-stage0/ ">github</a>
         </div>
         <p class="rss">Rolling Scopes School</p>
-        <div class="icons">
-            <a href="http://instagram.com"><img src="./assets/images/instagram.svg" alt="instagram"></a>
-            <a href="http://facebook.com"><img src="./assets/images/facebook.svg" alt="facebook"></a>
-            <a href="http://twitter.com"><img src="./assets/images/twitter.svg" alt="twitter"></a>
-            <a href="http://pinterest.com"><img src="./assets/images/pinterest.svg" alt="pinterest"></a>
-        </div>
+        <ul class="icons">
+            <li><a href="https://rs.school/js-stage0/"><img src="./assets/images/instagram.svg" alt="instagram"></a></li>   
+            <li><a href="https://rs.school/js-stage0/"><img src="./assets/images/facebook.svg" alt="facebook"></a></li>
+            <li><a href="https://rs.school/js-stage0/"><img src="./assets/images/twitter.svg" alt="twitter"></a></li>
+            <li><a href="https://rs.school/js-stage0/"><img src="./assets/images/pinterest.svg" alt="pinterest"></a></li>
+        </ul>
     </footer>
 </body>
 </html>
