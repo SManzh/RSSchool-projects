@@ -1,0 +1,402 @@
+@font-face {
+    font-family: 'Inika'; 
+    src: url(./assets/fonts/Inika-Regular.ttf);
+  }
+
+  @font-face {
+    font-family: 'Inika-Bold'; 
+    src: url(./assets/fonts/Inika-Bold.ttf);
+  }
+
+  @font-face {
+    font-family: 'Inter-Regular'; 
+    src: url(./assets/fonts/Inter-Regular.ttf);
+  }
+
+  @font-face {
+    font-family: 'Inter-Bold'; 
+    src: url(./assets/fonts/Inter-Bold.ttf);
+  }
+
+
+* {
+    margin: 0 auto;
+}
+
+/*------------------------------*/
+.header {
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 134px;
+    background-color: #EDF2EC;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    flex: 0 0 auto;
+    font-family: Inika;
+}
+
+.logo img {
+    display: flex;
+    flex: 0 0 auto;
+    width: 20px;
+    height: 20px;
+}
+
+.logo p {
+    font-size: 16px;
+    color: #000000;
+}
+
+ul.nav-list {
+    display: flex;
+    font-family: Inika;
+    list-style-type: none;
+    text-transform: capitalize;
+    width: 452px;
+}
+
+a.nav-a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #010201;
+}
+
+a.active {
+    color: #E06733;
+}
+
+a:hover {
+    color: #E06733;
+}
+
+/*------------------------------*/
+.welcome {
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 532px;
+    background-color: #EDF2EC;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+img.leafs {
+    width: 448.8px;
+    height: 407.36px;
+}
+
+.plants-text {
+    width: 549px;
+    height: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    color: #717171;
+}
+
+.plants-text h1 {
+    font-family: Inter-Bold;
+    margin-left: 0;
+    font-size: 45px;
+}
+
+.plants-text span {
+    color: #499A18;
+}
+
+.plants-text p {
+    font-family: Inter-Regular;
+    font-size: 20px;
+    color: #636060;
+}
+
+.plants-text button {
+    font-family: Inter-Regular;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-left: 0;
+    color: #000000;
+    border: 2px solid #E06733;
+    border-radius: 5px;
+    width: 158px;
+    height: 44px;
+}
+
+/*------------------------------*/
+.about {
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 666px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.gardeners-text {
+    width: 605px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.gardeners-text h2 {
+    margin-left: 0; 
+    font-family: Inika;
+    font-size: 40px;
+    color: #499A18;
+}
+
+.gardeners-text span {
+    color: #E06733;
+}
+
+.gardeners-text p {
+    font-family: Inter-Regular;
+    font-size: 20px;
+    color: #636060;
+}
+
+img.houseplants {
+    width: 464px;
+    height: 479px;
+}
+
+/*------------------------------*/
+.service {
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 1300px;
+    background-color: #EDF2EC;
+    display: flex;
+    flex-direction: column;
+}
+
+.service-head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 0;
+}
+
+.service-head h2 {
+    font-family: Inika;
+    font-size: 40px;
+    color: #499A18;
+    width: 306px;
+}
+
+.service-buttons {
+    margin-left: 50px;
+}
+
+.service-buttons button{
+    font-family: Inika;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #E06733;
+    border-radius: 5px;
+    width: 161px;
+    height: 50px;
+}
+
+.pics {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+div.pic {
+    width: 330px;
+    height: 450px;
+    margin: 20px 20px;
+}
+
+div.capt {
+    width: 330px;
+    height: 100px;
+    margin-top: -4px;
+    text-align: center;
+    padding-top: 10px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: 2px solid #E3E1D5;
+}
+
+div.capt p:first-child {
+    font-family: Inter-Bold;
+    font-size: 20px;
+    color: #E06733;
+}
+
+div.capt p:nth-child(2) {
+    font-family: Inter-Regular;
+    font-size: 16px;
+    color: #717171;
+}
+
+.gardeners {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.gardeners p {
+    font-family: Inter-Bold;
+    font-size: 40px;
+    color: #000000;
+    width: 452px;
+}
+
+.gardeners span {
+    color: #499A18;
+}
+
+/*------------------------------*/
+.price {
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 560px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+}
+
+.prices {
+    display: flex;
+    flex-direction: column;
+}
+
+.prices h2 {
+    font-family: Inter-Bold;
+    font-size: 40px;
+    color: #000000;
+    margin-left: 0;
+}
+
+.price-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 40px;
+    margin-top: 50px;
+    width: 332px;
+    height: 282.01px;
+    border: 2px solid #D9D9D9; 
+    border-radius: 20px;
+}
+
+.price-buttons button {
+    width: 250px;
+    height: 50px;
+    border: none;
+    border-radius: 20px;
+    background-color: #EDF2EC;
+    font-family: Inter-Bold;
+    font-size: 20px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button.contact-us {
+    margin-right: 0;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 162px;
+    height: 50px;
+    border: 2px solid #E06733;
+    border-radius: 5px;
+    font-family: Inika-Bold;
+    font-size: 20px;
+    color: #E06733;
+}
+
+.gardeners img {
+    width: 152px;
+    height: 174.99px;
+    margin-right: 0;
+}
+
+/*------------------------------*/
+.contacts {
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 550px;
+    background-color: #EDF2EC;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.contact-woman {
+    margin-top: 53px;
+}
+
+.contacts h2 {
+    font-family: Inika-Bold;
+    font-size: 40px;
+    color: #499A18;
+    margin-top: 60px;
+}
+
+button.city {
+    width: 450px;
+    height: 50px;
+    margin-top: 148px;
+    border: none;
+    background-color: #D6E7D2;
+    font-family: Inter-Regular;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.5);
+}
+
+
+/*------------------------------*/
+.footer {
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 130px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.git {
+    display: flex;
+    justify-content: space-between;
+    width: 182px;
+    margin-left: 109px;
+    margin-top: 40px;
+    font-family: Inter-Regular;
+    font-size: 20px;
+}
+
+.git a {
+    text-decoration: none;
+}
+
+.footer p.rss {
+    margin-top: 40px;
+    font-family: Inter-Regular;
+    font-size: 20px;
+}
+
+.footer .icons {
+    width: 188px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
