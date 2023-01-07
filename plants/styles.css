@@ -21,6 +21,7 @@
 
 * {
     margin: 0 auto;
+    scroll-behavior: smooth;
 }
 
 /*------------------------------*/
@@ -195,16 +196,22 @@ img.houseplants {
 
 .service-buttons {
     margin-left: 50px;
+    display: flex;
+    width: 559px;
 }
 
-.service-buttons button{
+.service-buttons button {
     font-family: Inika;
     font-size: 20px;
     text-transform: capitalize;
     color: #E06733;
+    border: 1px solid #E06733;
     border-radius: 5px;
     width: 161px;
     height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .pics {
@@ -261,7 +268,7 @@ div.capt p:nth-child(2) {
 }
 
 /*------------------------------*/
-.price {
+.prices {
     max-width: 1440px;
     margin: 0 auto;
     height: 560px;
@@ -270,12 +277,12 @@ div.capt p:nth-child(2) {
     justify-content: space-between;
 }
 
-.prices {
+.price {
     display: flex;
     flex-direction: column;
 }
 
-.prices h2 {
+.price h2 {
     font-family: Inter-Bold;
     font-size: 40px;
     color: #000000;
@@ -295,7 +302,7 @@ div.capt p:nth-child(2) {
     border-radius: 20px;
 }
 
-.price-buttons button {
+.price-buttons div {
     width: 250px;
     height: 50px;
     border: none;
@@ -349,7 +356,7 @@ div.contact-woman {
     margin-top: 60px;
 }
 
-button.city {
+div.city {
     width: 450px;
     height: 50px;
     margin-top: 148px;
@@ -386,6 +393,7 @@ div.git {
 
 .git a {
     text-decoration: none;
+    color: #000000;
 }
 
 .footer p.rss {
@@ -399,4 +407,5 @@ div.git {
     display: flex;
     justify-content: space-between;
     margin-top: 40px;
+    list-style-type: none;
 }
