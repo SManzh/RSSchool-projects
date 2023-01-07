@@ -30,6 +30,7 @@
     margin: 0 auto;
     height: 134px;
     background-color: #EDF2EC;
+    background-size: 100%;
     display: flex;
     align-items: center;
 }
@@ -38,6 +39,8 @@
     display: flex;
     flex: 0 0 auto;
     font-family: Inika;
+    margin-left: 112px;
+    margin-top: 1px;
 }
 
 .logo img {
@@ -45,19 +48,27 @@
     flex: 0 0 auto;
     width: 20px;
     height: 20px;
+    padding-bottom: 14px;
 }
 
 .logo p {
     font-size: 16px;
     color: #000000;
+    padding-top: 5px;
+}
+
+nav.navigation {
+    margin-left: 617px;
 }
 
 ul.nav-list {
     display: flex;
     font-family: Inika;
     list-style-type: none;
-    text-transform: capitalize;
-    width: 452px;
+}
+
+li.nav-point {
+    padding-right: 47px;
 }
 
 a.nav-a {
@@ -86,8 +97,9 @@ a:hover {
 }
 
 img.leafs {
-    width: 448.8px;
-    height: 407.36px;
+    width: 464px;
+    height: 424px;
+    margin-left: 8px;
 }
 
 .plants-text {
@@ -98,12 +110,14 @@ img.leafs {
     justify-content: space-between;
     text-align: left;
     color: #717171;
+    padding-left: 36px;
 }
 
 .plants-text h1 {
     font-family: Inter-Bold;
     margin-left: 0;
     font-size: 45px;
+    line-height: 51px;
 }
 
 .plants-text span {
@@ -114,6 +128,7 @@ img.leafs {
     font-family: Inter-Regular;
     font-size: 20px;
     color: #636060;
+    line-height: 35px;
 }
 
 .plants-text button {
@@ -123,9 +138,9 @@ img.leafs {
     margin-left: 0;
     color: #000000;
     border: 2px solid #E06733;
-    border-radius: 5px;
+    border-radius: 10px;
     width: 158px;
-    height: 44px;
+    height: 43px;
 }
 
 /*------------------------------*/
