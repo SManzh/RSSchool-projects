@@ -143,6 +143,12 @@ img.leafs {
     height: 43px;
 }
 
+.plants-text button:hover {
+    color: #FFFFFF;
+    background-color: #E06733;
+    cursor: pointer;
+}
+
 /*------------------------------*/
 .about {
     max-width: 1440px;
@@ -234,6 +240,12 @@ img.houseplants {
     justify-content: center;
     align-items: center;
     margin-right: 39px;
+}
+
+.service-buttons button:hover {
+    color: #FFFFFF;
+    background-color: #E06733;
+    cursor: pointer;
 }
 
 .pics {
@@ -330,6 +342,10 @@ div.capt p:nth-child(2) {
     padding-left: 39px;
 }
 
+.price-buttons div:hover {
+    cursor: pointer;
+}
+
 .price-buttons div img {
     margin-right: 40px;
 }
@@ -366,6 +382,12 @@ button.contact-us {
     font-size: 20px;
     color: #E06733;
     background-color: #FFFFFF;
+}
+
+button.contact-us:hover {
+    color: #FFFFFF;
+    background-color: #E06733;
+    cursor: pointer;
 }
 
 .gardeners img {
@@ -412,6 +434,11 @@ div.city {
     align-items: center;
     box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.5);
     margin-right: 92px;
+}
+
+div.city:hover {
+    background-color: #C1E698;
+    cursor: pointer;
 }
 
 .city p {
