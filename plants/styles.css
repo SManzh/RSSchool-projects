@@ -155,12 +155,14 @@ img.leafs {
 }
 
 .gardeners-text {
-    width: 605px;
+    width: 603px;
     height: 350px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     text-align: left;
+    margin-left: 109px;
+    margin-top: 6px;
 }
 
 .gardeners-text h2 {
@@ -168,6 +170,7 @@ img.leafs {
     font-family: Inika;
     font-size: 40px;
     color: #499A18;
+    margin-bottom: 10px;
 }
 
 .gardeners-text span {
@@ -178,11 +181,13 @@ img.leafs {
     font-family: Inter-Regular;
     font-size: 20px;
     color: #636060;
+    line-height: 30px;
 }
 
 img.houseplants {
     width: 464px;
     height: 479px;
+    margin-left: -29px;
 }
 
 /*------------------------------*/
@@ -199,7 +204,8 @@ img.houseplants {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-left: 0;
+    margin-left: 109px;
+    margin-top: 40px;
 }
 
 .service-head h2 {
@@ -210,9 +216,9 @@ img.houseplants {
 }
 
 .service-buttons {
-    margin-left: 50px;
     display: flex;
-    width: 559px;
+    margin-left: 140px;
+    margin-top: 29px;
 }
 
 .service-buttons button {
@@ -227,6 +233,7 @@ img.houseplants {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 39px;
 }
 
 .pics {
@@ -234,16 +241,20 @@ img.houseplants {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 80px;
+    margin-left: 14px;
 }
 
 div.pic {
     width: 330px;
     height: 450px;
-    margin: 20px 20px;
+    margin-right: 58px;
+    margin-left: 58px;
+    margin-bottom: 55px;
 }
 
 div.capt {
-    width: 330px;
+    width: 327px;
     height: 100px;
     margin-top: -4px;
     text-align: center;
@@ -257,29 +268,14 @@ div.capt p:first-child {
     font-family: Inter-Bold;
     font-size: 20px;
     color: #E06733;
+    margin-top: -4px;
 }
 
 div.capt p:nth-child(2) {
     font-family: Inter-Regular;
     font-size: 16px;
     color: #717171;
-}
-
-.gardeners {
-    display: flex;
-    flex-direction: column;
-    text-align: right;
-}
-
-.gardeners p {
-    font-family: Inter-Bold;
-    font-size: 40px;
-    color: #000000;
-    width: 452px;
-}
-
-.gardeners span {
-    color: #499A18;
+    margin-top: 12px;
 }
 
 /*------------------------------*/
@@ -295,6 +291,8 @@ div.capt p:nth-child(2) {
 .price {
     display: flex;
     flex-direction: column;
+    margin-left: 109px;
+    margin-top: 38px;
 }
 
 .price h2 {
@@ -309,16 +307,16 @@ div.capt p:nth-child(2) {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    margin-left: 40px;
-    margin-top: 50px;
-    width: 332px;
+    margin-left: 0px;
+    margin-top: 58px;
+    width: 330px;
     height: 282.01px;
     border: 2px solid #D9D9D9; 
     border-radius: 20px;
 }
 
 .price-buttons div {
-    width: 250px;
+    width: 211px;
     height: 50px;
     border: none;
     border-radius: 20px;
@@ -329,25 +327,52 @@ div.capt p:nth-child(2) {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-left: 39px;
+}
+
+.price-buttons div img {
+    margin-right: 40px;
+}
+
+.gardeners {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    margin-right: 0;
+}
+
+.gardeners p {
+    font-family: Inter-Bold;
+    font-size: 40px;
+    color: #000000;
+    width: 452px;
+    margin-top: 39px;
+    margin-right: 91px;
+}
+
+.gardeners span {
+    color: #499A18;
 }
 
 button.contact-us {
-    margin-right: 0;
-    margin-top: 40px;
+    margin-right: 93px;
+    margin-top: 42px;
     margin-bottom: 40px;
-    width: 162px;
+    width: 163px;
     height: 50px;
-    border: 2px solid #E06733;
+    border: 1px solid #E06733;
     border-radius: 5px;
     font-family: Inika-Bold;
     font-size: 20px;
     color: #E06733;
+    background-color: #FFFFFF;
 }
 
 .gardeners img {
-    width: 152px;
-    height: 174.99px;
-    margin-right: 0;
+    width: 162px;
+    height: 190px;
+    margin-right: 82px;
+    margin-top: -5px;
 }
 
 /*------------------------------*/
@@ -361,14 +386,17 @@ button.contact-us {
 }
 
 div.contact-woman {
-    margin-top: 53px;
+    margin-top: 50px;
+    margin-left: 110px;
 }
 
 .contacts h2 {
     font-family: Inika-Bold;
     font-size: 40px;
     color: #499A18;
-    margin-top: 60px;
+    margin-top: 58px;
+    margin-left: 44px;
+    margin-right: 0px;
 }
 
 div.city {
@@ -383,13 +411,25 @@ div.city {
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.5);
+    margin-right: 92px;
 }
 
+.city p {
+    margin-left: 21px;
+    margin-bottom: 2px;
+    letter-spacing: 1px;
+}
+
+.city img {
+    margin-left: 301px;
+    margin-bottom: 2px;
+}
 
 /*------------------------------*/
 .footer {
     max-width: 1440px;
     margin: 0 auto;
+    padding-top: 10px;
     height: 130px;
     background-color: #FFFFFF;
     display: flex;
@@ -400,10 +440,16 @@ div.git {
     display: flex;
     justify-content: space-between;
     width: 182px;
-    margin-left: 109px;
+    margin-left: 100px;
     margin-top: 40px;
     font-family: Inter-Regular;
     font-size: 20px;
+    margin-right: 2px;
+}
+
+.git p {
+    margin-left: 9px;
+    margin-right: 12px;
 }
 
 .git a {
@@ -413,6 +459,7 @@ div.git {
 
 .footer p.rss {
     margin-top: 40px;
+    margin-left: 331px;
     font-family: Inter-Regular;
     font-size: 20px;
 }
@@ -422,5 +469,10 @@ div.git {
     display: flex;
     justify-content: space-between;
     margin-top: 40px;
+    margin-left: 136px;
     list-style-type: none;
+}
+
+.footer .icons a {
+    padding-left: 28px;
 }
