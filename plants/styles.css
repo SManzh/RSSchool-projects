@@ -75,6 +75,7 @@ a.nav-a {
     text-decoration: none;
     font-size: 16px;
     color: #010201;
+    transition: all .3s;
 }
 
 a.active {
@@ -89,11 +90,12 @@ a:hover {
 .welcome {
     max-width: 1440px;
     margin: 0 auto;
-    height: 532px;
     background-color: #EDF2EC;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding-top: 53px;
+    padding-bottom: 52px;
 }
 
 img.leafs {
@@ -141,6 +143,8 @@ img.leafs {
     border-radius: 10px;
     width: 158px;
     height: 43px;
+    transition: all .3s;
+
 }
 
 .plants-text button:hover {
@@ -153,11 +157,12 @@ img.leafs {
 .about {
     max-width: 1440px;
     margin: 0 auto;
-    height: 666px;
     background-color: #FFFFFF;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding-top: 92px;
+    padding-bottom: 90px;
 }
 
 .gardeners-text {
@@ -200,10 +205,11 @@ img.houseplants {
 .service {
     max-width: 1440px;
     margin: 0 auto;
-    height: 1300px;
     background-color: #EDF2EC;
     display: flex;
     flex-direction: column;
+    padding-top: 0px;
+    padding-bottom: 66px;
 }
 
 .service-head {
@@ -240,6 +246,7 @@ img.houseplants {
     justify-content: center;
     align-items: center;
     margin-right: 39px;
+    transition: all .3s;
 }
 
 .service-buttons button:hover {
@@ -267,7 +274,7 @@ div.pic {
 
 div.capt {
     width: 327px;
-    height: 100px;
+    height: 88px;
     margin-top: -4px;
     text-align: center;
     padding-top: 10px;
@@ -294,10 +301,11 @@ div.capt p:nth-child(2) {
 .prices {
     max-width: 1440px;
     margin: 0 auto;
-    height: 560px;
     background-color: #FFFFFF;
     display: flex;
     justify-content: space-between;
+    padding-top: 0px;
+    padding-bottom: 105px;
 }
 
 .price {
@@ -382,6 +390,7 @@ button.contact-us {
     font-size: 20px;
     color: #E06733;
     background-color: #FFFFFF;
+    transition: all .3s;
 }
 
 button.contact-us:hover {
@@ -401,15 +410,17 @@ button.contact-us:hover {
 .contacts {
     max-width: 1440px;
     margin: 0 auto;
-    height: 550px;
     background-color: #EDF2EC;
     display: flex;
     justify-content: space-between;
+    padding-top: 2px;
+    padding-bottom: 0px;
 }
 
 div.contact-woman {
     margin-top: 50px;
     margin-left: 110px;
+    margin-bottom: -3px;
 }
 
 .contacts h2 {
@@ -434,6 +445,7 @@ div.city {
     align-items: center;
     box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.5);
     margin-right: 92px;
+    transition: all .3s;
 }
 
 div.city:hover {
@@ -456,7 +468,7 @@ div.city:hover {
 .footer {
     max-width: 1440px;
     margin: 0 auto;
-    padding-top: 10px;
+    padding-top: 12px;
     height: 130px;
     background-color: #FFFFFF;
     display: flex;
