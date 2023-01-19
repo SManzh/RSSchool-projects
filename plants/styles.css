@@ -670,12 +670,14 @@ div.git {
     
     div.capt p:nth-child(2) {
         width: 86%;
+        margin-top: 10px;
     }
 
     /*--------------------*/
     .prices {
         padding: 0 50px;
         max-width: 768px;
+        padding-bottom: 80px;
     }
 
     .price {
@@ -708,13 +710,16 @@ div.git {
     }
 
     .gardeners img {
-        margin-right: 0px;
+        margin-right: -5px;
+        margin-top: -9px;
     }
 
     /*--------------------*/
     .contacts {
         display: flex;
         flex-direction: column-reverse;
+        padding: 0 50px;
+        max-width: 768px;
     }
 
     .cont-city {
@@ -722,18 +727,71 @@ div.git {
         flex-direction: column;
     }
 
+    .contacts h2{
+        margin-top: 40px;
+        margin-left: 130px;
+        margin-right: 0px;
+    }
+
+    div.city {
+        margin-top: 101px;
+        margin-right: 3px;
+    }
+
+    div.contact-woman {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 246px;
+    }
+
+    .contact-woman img {
+        width: 53%;
+        padding-left: 21px;
+        padding-bottom: 4px;
+    }
     
-    
-    
-    
-    
-    
-    
-    
+    /*--------------------*/    
     
     .footer {
         display: flex;
         flex-direction: column;
+        padding: 0 50px;
+        max-width: 768px;
+    }
+
+    div.git {
+        margin-left: auto;
+        margin-right: 247px;
+        margin-top: 31px;
+    }
+
+    .git p:nth-child(2) {
+        margin-right: 17px;
+    }
+
+    .footer p.rss {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 17px;
+        margin-bottom: 5px;
+    }
+
+    .footer .icons {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+    }
+
+    .footer .icons a {
+        padding-left: 0px;
+        padding-right: 29px;
+    }
+
+    ul.icons {
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-right: 50px;
     }
 }
 
