@@ -758,11 +758,12 @@ div.git {
         flex-direction: column;
         padding: 0 50px;
         max-width: 768px;
+        margin-bottom: 49px;
     }
 
     div.git {
         margin-left: auto;
-        margin-right: 247px;
+        margin-right: 37%;
         margin-top: 31px;
     }
 
@@ -794,8 +795,6 @@ div.git {
         padding-right: 50px;
     }
 }
-
-
 
 /*380px--------------------*/
 @media (max-width: 380px) {
