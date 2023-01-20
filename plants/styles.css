@@ -549,6 +549,7 @@ div.git {
         margin-left: 0px;
         margin-right: 1px;
         padding-top: 3px;
+        overflow: hidden;
     }
 
     li.nav-point {
@@ -686,6 +687,7 @@ div.git {
         padding: 0 50px;
         max-width: 768px;
         padding-bottom: 80px;
+        overflow: hidden;
     }
 
     .price {
@@ -728,6 +730,7 @@ div.git {
         flex-direction: column-reverse;
         padding: 0 50px;
         max-width: 768px;
+        overflow: hidden;
     }
 
     .cont-city {
@@ -744,6 +747,11 @@ div.git {
     div.city {
         margin-top: 101px;
         margin-right: 3px;
+    }
+
+    .city img {
+        margin-left: 0px;
+        margin-right: 33px;
     }
 
     div.contact-woman {
@@ -811,17 +819,134 @@ div.git {
         display: flex;
         padding: 0 25px;
         max-width: 380px;
+        height: 96px;
     }
 
     .hamburger {
         display: inline-block;
         width: 40px;
         height: 24px;
+        margin-right: 0px;
+        margin-bottom: 5px;
     }
 
     .navigation {
         display: none;
     }
+
+    /*--------------------*/
+    .welcome {
+        display: flex;
+        padding: 0 25px;
+        max-width: 380px;
+    }
+
+    .plants-text {
+        height: 299px;
+    }
+    
+    .plants-text h1 {
+        padding-left: 25px;
+        font-size: 25px;
+        line-height: 35px;
+        padding-top: 17px;
+    }
+
+    .plants-text p {
+        padding-left: 19px;
+        padding-top: 21px;
+        padding-bottom: 26px;
+    }
+
+    .plants-text button {
+        margin-left: 25px;
+        font-size: 10px;
+        width: 99px;
+        height: 34px;
+    }    
+
+    /*--------------------*/
+    .about {
+        display: flex;
+        padding: 0 25px;
+        max-width: 380px;
+    }
+
+    .gardeners-text {
+        padding-top: 25px;
+        justify-content: start;
+    }
+
+    .gardeners-text h2 {
+        font-size: 25px;
+        padding-left: 0px;
+        padding-bottom: 0px;
+        margin-right: 0px;
+        margin-left: 24px;
+    }
+    
+    .gardeners-text p {
+        font-size: 15px;
+        line-height: 25px;
+        margin-top: 5px;
+    }
+
+    img.houseplants {
+        margin-top: -21px;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 0px;
+        padding-bottom: 29px;
+        width: 45%;
+        height: 45%;
+    }
+
+    /*--------------------*/
+    .service {
+        display: flex;
+        padding: 0 25px;
+        max-width: 380px;
+    }
+
+    .service-head {
+        margin-top: 10px;
+    }
+
+    .service-head h2 {
+        width: 75%;
+        font-size: 25px;
+    }
+
+    .service-buttons {
+        margin-left: 0px;
+        margin-top: 25px;
+        margin-bottom: 10px;
+        justify-content: flex-start;
+    }
+    
+    .service-buttons button {
+        width: 121px;
+        height: 35px;
+        font-size: 15px;
+        margin-right: 10px;
+        margin-left: 0px;
+        margin-bottom: 9px;
+    }
+
+
+    .pics {
+        margin-top: 11px;
+        margin-bottom: 7px;
+    }
+
+    div.pic {
+        padding-left: 25px;
+        padding-right: 25px;
+        margin-bottom: 134px;
+    }
+
+
 
 
 
