@@ -937,7 +937,7 @@ div.git {
 
     .pics {
         margin-top: 11px;
-        margin-bottom: 7px;
+        margin-bottom: 4px;
     }
 
     div.pic {
@@ -946,6 +946,126 @@ div.git {
         margin-bottom: 134px;
     }
 
+    /*--------------------*/
+    .prices{
+        display: flex;
+        padding: 0 25px;
+        max-width: 380px;
+        flex-wrap: wrap;
+    }
+
+    .price {
+        margin-top: 22px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .price h2 {
+        font-size: 25px;
+        margin-left: auto;
+        margin-right: 38%;
+    }
+    
+    .price-buttons {
+        width: 224px;
+        height: 235px;
+        margin-left: 54px;
+        margin-right: 54px;
+        margin-top: 37px;
+        padding-top: 13px;
+        padding-bottom: 13px;
+    }
+
+    .price-buttons div {
+        width: 180px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 15px;
+        padding-left: 30px;
+    }
+
+    .gardeners {
+        text-align: center;
+    }
+
+    .gardeners p {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        font-size: 20px;
+    }
+
+    button.contact-us {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        width: 121px;
+        height: 35px;
+        font-size: 15px;
+    }
+
+    .gardeners img {
+        display: none;
+    }
+
+    /*--------------------*/
+    .contacts {
+        display: flex;
+        padding: 0 25px;
+        max-width: 380px;
+    }
+
+    .contacts h2 {
+        font-size: 25px;
+        margin-left: 31%;
+        margin-top: 25px;
+    }
+
+    div.city {
+        margin-top: 83px;
+        margin-left: 17px;
+        margin-right: 17px;
+        width: 300px;
+    }
+
+    .city p {
+        margin-left: 16px;
+    }
+
+    .city img {
+        margin-right: 25px;
+    }
+
+    div.contact-woman {
+        margin-top: 132px;
+        margin-right: 10px;
+    }
+
+    .contact-woman img {
+        width: 31%;
+        padding-left: 0px;
+    }
+
+    /*--------------------*/
+    .footer {
+        display: flex;
+        padding: 0 25px;
+        max-width: 380px;
+    }
+
+    div.git {
+        margin-top: 21px;
+        padding-left: 13%;
+    }
+
+    .git p:nth-child(2) {
+        margin-right: 24px;
+    }
+
+    .footer p.rss {
+        margin-bottom: -6px;
+    }
 
 
 
