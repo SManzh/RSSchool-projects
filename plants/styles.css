@@ -21,6 +21,7 @@
 
 * {
     margin: 0 auto;
+    box-sizing: border-box;
     scroll-behavior: smooth;
 }
 
@@ -47,8 +48,8 @@
     display: flex;
     flex: 0 0 auto;
     width: 20px;
-    height: 20px;
-    padding-bottom: 14px;
+    height: 32px;
+    padding-bottom: 11px;
 }
 
 .logo p {
@@ -57,8 +58,12 @@
     padding-top: 5px;
 }
 
+.hamburger {
+    display: none;
+}
+
 nav.navigation {
-    margin-left: 617px;
+    margin-right: 46px;
 }
 
 ul.nav-list {
@@ -75,6 +80,7 @@ a.nav-a {
     text-decoration: none;
     font-size: 16px;
     color: #010201;
+    transition: all .3s;
 }
 
 a.active {
@@ -89,17 +95,17 @@ a:hover {
 .welcome {
     max-width: 1440px;
     margin: 0 auto;
-    height: 532px;
     background-color: #EDF2EC;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding-top: 53px;
+    padding-bottom: 52px;
 }
 
 img.leafs {
     width: 464px;
     height: 424px;
-    margin-left: 8px;
 }
 
 .plants-text {
@@ -110,7 +116,7 @@ img.leafs {
     justify-content: space-between;
     text-align: left;
     color: #717171;
-    padding-left: 36px;
+    padding-left: 10px;
 }
 
 .plants-text h1 {
@@ -141,6 +147,8 @@ img.leafs {
     border-radius: 10px;
     width: 158px;
     height: 43px;
+    transition: all .3s;
+
 }
 
 .plants-text button:hover {
@@ -153,11 +161,12 @@ img.leafs {
 .about {
     max-width: 1440px;
     margin: 0 auto;
-    height: 666px;
     background-color: #FFFFFF;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding-top: 92px;
+    padding-bottom: 90px;
 }
 
 .gardeners-text {
@@ -200,10 +209,11 @@ img.houseplants {
 .service {
     max-width: 1440px;
     margin: 0 auto;
-    height: 1300px;
     background-color: #EDF2EC;
     display: flex;
     flex-direction: column;
+    padding-top: 0px;
+    padding-bottom: 66px;
 }
 
 .service-head {
@@ -223,6 +233,7 @@ img.houseplants {
 
 .service-buttons {
     display: flex;
+    flex-wrap: wrap;
     margin-left: 140px;
     margin-top: 29px;
 }
@@ -240,6 +251,7 @@ img.houseplants {
     justify-content: center;
     align-items: center;
     margin-right: 39px;
+    transition: all .3s;
 }
 
 .service-buttons button:hover {
@@ -266,8 +278,8 @@ div.pic {
 }
 
 div.capt {
-    width: 327px;
-    height: 100px;
+    width: 330px;
+    height: 101px;
     margin-top: -4px;
     text-align: center;
     padding-top: 10px;
@@ -294,10 +306,11 @@ div.capt p:nth-child(2) {
 .prices {
     max-width: 1440px;
     margin: 0 auto;
-    height: 560px;
     background-color: #FFFFFF;
     display: flex;
     justify-content: space-between;
+    padding-top: 0px;
+    padding-bottom: 105px;
 }
 
 .price {
@@ -328,7 +341,8 @@ div.capt p:nth-child(2) {
 }
 
 .price-buttons div {
-    width: 211px;
+    display: flex;
+    width: 250px;
     height: 50px;
     border: none;
     border-radius: 20px;
@@ -336,10 +350,11 @@ div.capt p:nth-child(2) {
     font-family: Inter-Bold;
     font-size: 20px;
     text-align: left;
-    display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 39px;
+    padding-left: 40px;
+    padding-top: 6px;;
+    margin-left: 38px;
 }
 
 .price-buttons div:hover {
@@ -361,7 +376,7 @@ div.capt p:nth-child(2) {
     font-family: Inter-Bold;
     font-size: 40px;
     color: #000000;
-    width: 452px;
+    width: 57%;
     margin-top: 39px;
     margin-right: 91px;
 }
@@ -382,6 +397,7 @@ button.contact-us {
     font-size: 20px;
     color: #E06733;
     background-color: #FFFFFF;
+    transition: all .3s;
 }
 
 button.contact-us:hover {
@@ -401,15 +417,23 @@ button.contact-us:hover {
 .contacts {
     max-width: 1440px;
     margin: 0 auto;
-    height: 550px;
     background-color: #EDF2EC;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    padding-top: 2px;
+    padding-bottom: 0px;
 }
 
 div.contact-woman {
     margin-top: 50px;
     margin-left: 110px;
+    margin-bottom: -3px;
+}
+
+div.cont-city {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .contacts h2 {
@@ -417,8 +441,8 @@ div.contact-woman {
     font-size: 40px;
     color: #499A18;
     margin-top: 58px;
-    margin-left: 44px;
-    margin-right: 0px;
+    margin-left: 110px;
+    margin-right: 70px;
 }
 
 div.city {
@@ -434,6 +458,7 @@ div.city {
     align-items: center;
     box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.5);
     margin-right: 92px;
+    transition: all .3s;
 }
 
 div.city:hover {
@@ -456,10 +481,11 @@ div.city:hover {
 .footer {
     max-width: 1440px;
     margin: 0 auto;
-    padding-top: 10px;
+    padding-top: 12px;
     height: 130px;
     background-color: #FFFFFF;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -496,10 +522,552 @@ div.git {
     display: flex;
     justify-content: space-between;
     margin-top: 40px;
-    margin-left: 136px;
+    margin-right: 155px;
     list-style-type: none;
 }
 
 .footer .icons a {
     padding-left: 28px;
+}
+
+/*media queries--------------------*/
+/*768px--------------------*/
+@media (max-width: 768px) {
+
+    .header {
+        display: flex;
+        height: 117px;
+        justify-content: space-between;
+        padding: 0 50px;
+    }
+
+    .logo {
+        margin-left: 0px;
+    }
+
+    nav.navigation {
+        margin-left: 0px;
+        margin-right: 1px;
+        padding-top: 3px;
+        overflow: hidden;
+    }
+
+    li.nav-point {
+        padding-right: 0px;
+        padding-left: 47px;
+    }
+
+    /*--------------------*/
+    .welcome {
+        padding: 0 50px;
+        max-width: 768px;
+        flex-direction: row-reverse;
+        padding-top: 32px;
+        padding-bottom: 48px;
+    }
+
+    .plants-text {
+        padding-left: 0px;
+        padding-top: 8px;
+        justify-content: flex-start;
+    }
+    
+    .plants-text h1 {
+        font-size: 35px;
+    }
+
+    .plants-text p {
+        font-size: 16px;
+        line-height: 25px;
+        padding-top: 30px;
+        padding-bottom: 33px;
+        width: 341px;
+        margin-left: 5px;
+    }
+
+    img.leafs {
+        width: 100%;
+        height: 100%;
+        padding-left: 32px;
+        padding-bottom: 69px;
+    }
+
+    /*--------------------*/
+    .about {
+        padding: 0 50px;
+        padding-bottom: 88px;
+        max-width: 768px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .gardeners-text {
+        padding-top: 34px;
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    .gardeners-text h2 {
+        text-align: center;
+        margin-left: 0px;
+        font-size: 35px;
+        width: 85%;
+        padding-left: 96px;
+        padding-bottom: 42px;
+    }
+
+    img.houseplants {
+        margin-right: auto;
+        margin-left: 205px;
+        padding-top: 73px;
+        width: 38%;
+        height: 38%;
+    }
+
+    /*--------------------*/
+    .service {
+        padding: 0 50px;
+        max-width: 768px;
+        padding-bottom: 42px;
+    }
+
+    .service-head {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+    }
+
+    .service-head h2 {
+        padding-top: 19px;
+        padding-bottom: 16px;
+        margin-left: 0px;
+        font-size: 35px;
+    }
+
+    .service-buttons {
+        margin-left: 0px;
+    }
+
+    .service-buttons button {
+        margin-right: 38px;
+    }
+
+    .pics {
+        justify-content: space-between;
+        margin-left: 0px;
+        margin-top: 30px;
+    }
+
+    div.pic {
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 138px;
+        padding-top: 10px;
+        width: 280px;
+        height: 350px;
+    }
+    
+    .pic img {
+        width: 280px;
+        height: 350px;
+    }
+
+    div.capt {
+        width: 280px;
+        margin-left: 0px;
+    }
+    
+    div.capt p:nth-child(2) {
+        width: 86%;
+        margin-top: 10px;
+    }
+
+    /*--------------------*/
+    .prices {
+        padding: 0 50px;
+        max-width: 768px;
+        padding-bottom: 80px;
+        overflow: hidden;
+    }
+
+    .price {
+        margin-left: 0px;
+    }
+
+    .price h2 {
+        font-size: 35px;
+        padding-left: 15px;
+        padding-top: 2px;
+    }
+
+    .price-buttons div {
+        padding-bottom: 5px;
+        padding-left: 42px;
+    }
+
+    .gardeners p {
+        font-size: 25px;
+        margin-right: 0px;
+        margin-top: 140px;
+        line-height: 35px;
+        width: 85%;
+    }
+
+    button.contact-us {
+        margin-right: 0px;
+        margin-top: 28px;
+        margin-bottom: 36px;
+    }
+
+    .gardeners img {
+        margin-right: -5px;
+        margin-top: -9px;
+    }
+
+    /*--------------------*/
+    .contacts {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 0 50px;
+        max-width: 768px;
+        overflow: hidden;
+    }
+
+    .cont-city {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contacts h2{
+        margin-top: 40px;
+        margin-left: 130px;
+        margin-right: 0px;
+    }
+
+    div.city {
+        margin-top: 101px;
+        margin-right: 3px;
+    }
+
+    .city img {
+        margin-left: 0px;
+        margin-right: 33px;
+    }
+
+    div.contact-woman {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 246px;
+    }
+
+    .contact-woman img {
+        width: 53%;
+        padding-left: 21px;
+        padding-bottom: 4px;
+    }
+    
+    /*--------------------*/    
+    
+    .footer {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        padding: 0 50px;
+        max-width: 768px;
+        margin-bottom: 49px;
+    }
+
+    div.git {
+        margin-left: auto;
+        margin-right: 37%;
+        margin-top: 31px;
+    }
+
+    .git p:nth-child(2) {
+        margin-right: 17px;
+    }
+
+    .footer p.rss {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 17px;
+        margin-bottom: 5px;
+    }
+
+    .footer .icons {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+    }
+
+    .footer .icons a {
+        padding-left: 0px;
+        padding-right: 29px;
+    }
+
+    ul.icons {
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-right: 50px;
+    }
+}
+
+/*380px--------------------*/
+@media (max-width: 380px) {
+    .header {
+        display: flex;
+        padding: 0 25px;
+        max-width: 380px;
+        height: 96px;
+    }
+
+    .hamburger {
+        display: inline-block;
+        width: 40px;
+        height: 24px;
+        margin-right: 0px;
+        margin-bottom: 5px;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    /*--------------------*/
+    .welcome {
+        display: flex;
+        padding: 0 25px;
+        max-width: 380px;
+    }
+
+    .plants-text {
+        height: 299px;
+    }
+    
+    .plants-text h1 {
+        padding-left: 25px;
+        font-size: 25px;
+        line-height: 35px;
+        padding-top: 17px;
+    }
+
+    .plants-text p {
+        padding-left: 19px;
+        padding-top: 21px;
+        padding-bottom: 26px;
+    }
+
+    .plants-text button {
+        margin-left: 25px;
+        font-size: 10px;
+        width: 99px;
+        height: 34px;
+    }    
+
+    /*--------------------*/
+    .about {
+        display: flex;
+        padding: 0 25px;
+        max-width: 380px;
+    }
+
+    .gardeners-text {
+        padding-top: 25px;
+        justify-content: start;
+    }
+
+    .gardeners-text h2 {
+        font-size: 25px;
+        padding-left: 0px;
+        padding-bottom: 0px;
+        margin-right: 0px;
+        margin-left: 24px;
+    }
+    
+    .gardeners-text p {
+        font-size: 15px;
+        line-height: 25px;
+        margin-top: 5px;
+    }
+
+    img.houseplants {
+        margin-top: -21px;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 0px;
+        padding-bottom: 29px;
+        width: 45%;
+        height: 45%;
+    }
+
+    /*--------------------*/
+    .service {
+        display: flex;
+        padding: 0 25px;
+        max-width: 380px;
+    }
+
+    .service-head {
+        margin-top: 10px;
+    }
+
+    .service-head h2 {
+        width: 75%;
+        font-size: 25px;
+    }
+
+    .service-buttons {
+        margin-left: 0px;
+        margin-top: 25px;
+        margin-bottom: 10px;
+        justify-content: flex-start;
+    }
+    
+    .service-buttons button {
+        width: 121px;
+        height: 35px;
+        font-size: 15px;
+        margin-right: 10px;
+        margin-left: 0px;
+        margin-bottom: 9px;
+    }
+
+
+    .pics {
+        margin-top: 11px;
+        margin-bottom: 4px;
+    }
+
+    div.pic {
+        padding-left: 25px;
+        padding-right: 25px;
+        margin-bottom: 134px;
+    }
+
+    /*--------------------*/
+    .prices{
+        display: flex;
+        padding: 0 25px;
+        max-width: 380px;
+        flex-wrap: wrap;
+    }
+
+    .price {
+        margin-top: 22px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .price h2 {
+        font-size: 25px;
+        margin-left: auto;
+        margin-right: 38%;
+    }
+    
+    .price-buttons {
+        width: 224px;
+        height: 235px;
+        margin-left: 54px;
+        margin-right: 54px;
+        margin-top: 37px;
+        padding-top: 13px;
+        padding-bottom: 13px;
+    }
+
+    .price-buttons div {
+        width: 180px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 15px;
+        padding-left: 30px;
+    }
+
+    .gardeners {
+        text-align: center;
+    }
+
+    .gardeners p {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        font-size: 20px;
+    }
+
+    button.contact-us {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        width: 121px;
+        height: 35px;
+        font-size: 15px;
+    }
+
+    .gardeners img {
+        display: none;
+    }
+
+    /*--------------------*/
+    .contacts {
+        display: flex;
+        padding: 0 25px;
+        max-width: 380px;
+    }
+
+    .contacts h2 {
+        font-size: 25px;
+        margin-left: 31%;
+        margin-top: 25px;
+    }
+
+    div.city {
+        margin-top: 83px;
+        margin-left: 17px;
+        margin-right: 17px;
+        width: 300px;
+    }
+
+    .city p {
+        margin-left: 16px;
+    }
+
+    .city img {
+        margin-right: 25px;
+    }
+
+    div.contact-woman {
+        margin-top: 132px;
+        margin-right: 10px;
+    }
+
+    .contact-woman img {
+        width: 31%;
+        padding-left: 0px;
+    }
+
+    /*--------------------*/
+    .footer {
+        display: flex;
+        padding: 0 25px;
+        max-width: 380px;
+    }
+
+    div.git {
+        margin-top: 21px;
+        padding-left: 13%;
+    }
+
+    .git p:nth-child(2) {
+        margin-right: 24px;
+    }
+
+    .footer p.rss {
+        margin-bottom: -6px;
+    }
+
+
+
+
 }
