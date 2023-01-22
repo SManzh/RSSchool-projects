@@ -58,8 +58,56 @@
     padding-top: 5px;
 }
 
-.hamburger {
+.header-burger-btn {
     display: none;
+    position: relative;
+    width: 40px;
+    height: 24px;
+    border: none;
+    margin-right: 0px;
+}
+
+.header-burger-btn span {
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background-color: #717171;
+    left: 0px;
+    transition: transform .5s opacity .5s background-color .5s;
+}
+
+.header-burger-btn span:nth-child(1) {
+    transform: translateY(-12px);
+}
+
+.header-burger-btn span:nth-child(2) {
+    transform: translateY(-4px);
+}
+
+.header-burger-btn span:nth-child(3) {
+    transform: translateY(4px);
+}
+
+.header-burger-btn span:nth-child(4) {
+    transform: translateY(12px);
+}
+
+.header.open .header-burger-btn span:nth-child(2) {
+    opacity: 0;
+}
+
+.header.open .header-burger-btn span:nth-child(3) {
+    opacity: 0;
+}
+
+.header.open .header-burger-btn span:nth-child(1) {
+    transform: translateY(0) rotate(45deg);
+    transition: transform .5s;
+}
+
+.header.open .header-burger-btn span:nth-child(4) {
+    transform: translateY(0) rotate(-45deg);
+    transition: transform .5s;
 }
 
 nav.navigation {
@@ -629,6 +677,7 @@ div.git {
         padding: 0 50px;
         max-width: 768px;
         padding-bottom: 42px;
+        overflow: hidden;
     }
 
     .service-head {
@@ -822,16 +871,38 @@ div.git {
         height: 96px;
     }
 
-    .hamburger {
-        display: inline-block;
-        width: 40px;
-        height: 24px;
-        margin-right: 0px;
-        margin-bottom: 5px;
+    .header-burger-btn {
+        display: block;
     }
 
     .navigation {
-        display: none;
+        position: absolute;
+        left: -150px;
+        top: 0;
+        width: 150px;
+        background-color: #E06733;
+        padding: 100px 20px 20px 20px;
+        transition: transform .5s;
+    }
+
+    li.nav-point {
+        padding-left: 0px;
+    }
+
+    ul.nav-list {
+        display: block;
+        padding-top: 90px;
+    }
+
+    a.nav-a {
+        color: #FFFFFF;
+        display: block;
+        padding: 10px 0;
+    }
+
+    
+    .header.open .navigation {
+        transform: translateX(100%);
     }
 
     /*--------------------*/
