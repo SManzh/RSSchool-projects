@@ -7,16 +7,20 @@
     <title>Plants</title>
     <link href="./styles.css" rel="stylesheet" type="text/css">
     <link rel="shortcut icon" href="./assets/images/icons-plant-16.png" type="image/x-icon">
+    <script defer src="./index.js"></script>
 </head>
 <body>
-    <header class="header">
+    <header class="header open">
         <div class="logo">
             <img src="./assets/images/logo_vector.png" alt="plants">
             <p>Plants</p>            
         </div>
-        <div class="hamburger">
-            <span class="hamburger-line"><img src="./assets/images/burger.svg" alt="burger"></span>
-        </div>
+        <button class="header-burger-btn" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
         <nav class="navigation">
             <ul class="nav-list">
                 <li class="nav-point"><a href="#home" class="active nav-a" >Home</a></li>
@@ -156,6 +160,5 @@
             <li><a href="https://rs.school/js-stage0/"><img src="./assets/images/pinterest.svg" alt="pinterest"></a></li>
         </ul>
     </footer>
-    <script src="./index.js"></script>
 </body>
 </html>

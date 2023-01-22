@@ -1,1 +1,7 @@
-console.log("estimated mark 110(100)\nВёрстка валидная +10\nВёрстка семантическая +20\nВёрстка соответствует макету +48\nТребования к css + 12\nИнтерактивность, реализуемая через css +20");
+document.querySelector("header").classList.toggle("open");
+
+document.addEventListener("DOMContentLoaded", function(){
+    document.getElementById("burger").addEventListener("click", function(){
+        document.querySelector("header").classList.toggle("open")
+    })
+});
