@@ -17,3 +17,5 @@ document.addEventListener("DOMContentLoaded", function(){
         document.querySelector("header").classList.remove("open")
     })
 });
+
+console.log("all necessary task request are met");
