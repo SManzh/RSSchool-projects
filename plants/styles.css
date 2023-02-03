@@ -378,6 +378,7 @@ div.capt p:nth-child(2) {
 .price-buttons {
     display: flex;
     flex-direction: column;
+    position: relative;
     align-items: center;
     justify-content: space-evenly;
     margin-left: 0px;
@@ -388,7 +389,7 @@ div.capt p:nth-child(2) {
     border-radius: 20px;
 }
 
-.price-buttons div {
+.price-buttons div.price-btn {
     display: flex;
     width: 250px;
     height: 50px;
@@ -405,13 +406,136 @@ div.capt p:nth-child(2) {
     margin-left: 38px;
 }
 
-.price-buttons div:hover {
+.price-buttons div.price-btn img:hover {
     cursor: pointer;
 }
 
-.price-buttons div img {
+.price-buttons div.price-btn img {
     margin-right: 40px;
 }
+
+/*on click------------------------*/
+.price-buttons div.price-btn.on-click {
+    background-color: #D6E7D2;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.prcs-panels {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+}
+
+.prcs-panels:nth-child(2) {
+    display: block;
+    position: absolute;
+    top: 70px;
+    left: 38px;
+    z-index: 999;
+    background-color: #D6E7D2;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.prcs-panels:nth-child(2) img {
+    position: absolute;
+    top: -18px;
+    left: 195px;
+}
+
+.prcs-panels:nth-child(4) {
+    position: absolute;
+    top: 159px;
+    left: 38px;
+    z-index: 999;
+    z-index: 999;
+    background-color: #D6E7D2;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.prcs-panels:nth-child(4) img {
+    position: absolute;
+    top: -25px;
+    left: 195px;
+}
+
+.prcs-panels:nth-child(6) {
+    position: absolute;
+    top: 230px;
+    left: 38px;
+    z-index: 999;
+    z-index: 999;
+    background-color: #D6E7D2;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.prcs-panels:nth-child(6) img {
+    position: absolute;
+    top: -15px;
+    left: 195px;
+}
+
+.prcs-panels.hide {
+    display: none;
+}
+
+.panel-divider {
+    width: 164px;
+    height: 1px;
+    background-color: #aea1a1;;
+    margin-top: 12px;
+    margin-bottom: 6px;
+}
+
+div.panel-dscr {
+    font-family: Inter-Regular;
+    font-size: 10px;
+    color: #717171;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+div.panel-price {
+    font-family: Inter-Bold;
+    font-size: 12px;
+    color: #E06733;
+    margin-left: 40px;
+    margin-top: 6px;
+    margin-bottom: 12px;
+}
+
+div.panel-price span:nth-child(2) {
+    font-size: 16px;
+}
+
+div.panel-price span:nth-child(3) {
+    font-family: Inter;
+    font-size: 12px;
+    color: #000000;
+}
+
+div.panel-btn {
+    width: 86px;
+    height: 25px;
+    color: #717171;
+    background-color: #FFFFFF;
+    margin-left: 40px;
+    font-family: Inter-Bold;
+    font-size: 14px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 12px;
+    padding-top: 4px;
+}
+
+div.panel-btn a {
+    text-decoration: none;
+}
+
+
 
 .gardeners {
     display: flex;
@@ -578,10 +702,24 @@ div.git {
     padding-left: 28px;
 }
 
+/*interaction----------------------*/
+div.pic.blur {
+    filter: blur(5px);
+    transition: all .3s;
+}
+
+.service-buttons button.pushed {
+    color: #FFFFFF;
+    background-color: #E06733;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+
+
 /*media queries--------------------*/
 /*768px--------------------*/
 @media (max-width: 768px) {
-
     .header {
         display: flex;
         height: 117px;
@@ -749,7 +887,7 @@ div.git {
         padding-top: 2px;
     }
 
-    .price-buttons div {
+    .price-buttons div.price-btn {
         padding-bottom: 5px;
         padding-left: 42px;
     }
@@ -1047,7 +1185,7 @@ div.git {
         padding-bottom: 13px;
     }
 
-    .price-buttons div {
+    .price-buttons div.price-btn {
         width: 180px;
         margin-left: auto;
         margin-right: auto;
