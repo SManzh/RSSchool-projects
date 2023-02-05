@@ -378,6 +378,7 @@ div.capt p:nth-child(2) {
 .price-buttons {
     display: flex;
     flex-direction: column;
+    position: relative;
     align-items: center;
     justify-content: space-evenly;
     margin-left: 0px;
@@ -388,7 +389,7 @@ div.capt p:nth-child(2) {
     border-radius: 20px;
 }
 
-.price-buttons div {
+.price-buttons div.price-btn {
     display: flex;
     width: 250px;
     height: 50px;
@@ -405,13 +406,136 @@ div.capt p:nth-child(2) {
     margin-left: 38px;
 }
 
-.price-buttons div:hover {
+.price-buttons div.price-btn img:hover {
     cursor: pointer;
 }
 
-.price-buttons div img {
+.price-buttons div.price-btn img {
     margin-right: 40px;
 }
+
+/*on click------------------------*/
+.price-buttons div.price-btn.on-click {
+    background-color: #D6E7D2;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.prcs-panels {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+}
+
+.prcs-panels:nth-child(2) {
+    display: block;
+    position: absolute;
+    top: 70px;
+    left: 38px;
+    z-index: 999;
+    background-color: #D6E7D2;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.prcs-panels:nth-child(2) img {
+    position: absolute;
+    top: -18px;
+    left: 195px;
+}
+
+.prcs-panels:nth-child(4) {
+    position: absolute;
+    top: 159px;
+    left: 38px;
+    z-index: 999;
+    z-index: 999;
+    background-color: #D6E7D2;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.prcs-panels:nth-child(4) img {
+    position: absolute;
+    top: -25px;
+    left: 195px;
+}
+
+.prcs-panels:nth-child(6) {
+    position: absolute;
+    top: 230px;
+    left: 38px;
+    z-index: 999;
+    z-index: 999;
+    background-color: #D6E7D2;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.prcs-panels:nth-child(6) img {
+    position: absolute;
+    top: -15px;
+    left: 195px;
+}
+
+.prcs-panels.hide {
+    display: none;
+}
+
+.panel-divider {
+    width: 164px;
+    height: 1px;
+    background-color: #aea1a1;;
+    margin-top: 12px;
+    margin-bottom: 6px;
+}
+
+div.panel-dscr {
+    font-family: Inter-Regular;
+    font-size: 10px;
+    color: #717171;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+div.panel-price {
+    font-family: Inter-Bold;
+    font-size: 12px;
+    color: #E06733;
+    margin-left: 40px;
+    margin-top: 6px;
+    margin-bottom: 12px;
+}
+
+div.panel-price span:nth-child(2) {
+    font-size: 16px;
+}
+
+div.panel-price span:nth-child(3) {
+    font-family: Inter;
+    font-size: 12px;
+    color: #000000;
+}
+
+div.panel-btn {
+    width: 86px;
+    height: 25px;
+    color: #717171;
+    background-color: #FFFFFF;
+    margin-left: 40px;
+    font-family: Inter-Bold;
+    font-size: 14px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 12px;
+    padding-top: 4px;
+}
+
+div.panel-btn a {
+    text-decoration: none;
+}
+
+
 
 .gardeners {
     display: flex;
@@ -493,7 +617,7 @@ div.cont-city {
     margin-right: 70px;
 }
 
-div.city {
+details.city {
     width: 450px;
     height: 50px;
     margin-top: 148px;
@@ -506,24 +630,157 @@ div.city {
     align-items: center;
     box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.5);
     margin-right: 92px;
-    transition: all .3s;
+    transition: all .3s;   
 }
 
-div.city:hover {
+details p {
+    z-index: 999;
+}
+
+summary {
+    list-style: none;
+    padding-top: 10px;
+    padding-left: 22px;
+    padding-bottom: 18px;
+}
+
+details.city:hover {
     background-color: #C1E698;
     cursor: pointer;
 }
 
 .city p {
-    margin-left: 21px;
-    margin-bottom: 2px;
-    letter-spacing: 1px;
+    background-color: #D9D9D9;
+    color: #499A18;
+    padding-top: 20px;
+    padding-left: 22px;
+    padding-bottom: 5px;
 }
 
 .city img {
-    margin-left: 301px;
-    margin-bottom: 2px;
+    margin-left: 340px;
+    margin-bottom: 0px;
 }
+
+.city p:hover {
+    text-decoration: underline;
+    text-underline-offset: 8px;
+}
+
+p.cts-open {
+    z-index: 999;
+}
+
+div.city-cards {
+    position: relative;
+}
+
+div.cities.close {
+    display: none;
+}
+
+p.cts-open {
+    width: 450px;
+    height: 50px;
+    margin-top: 148px;
+    padding-left: 20px;
+    border: none;
+    background-color: #C1E698;
+    font-family: Inter-Regular;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 1px 3px 1px rgb(0 0 0 / 50%);
+    margin-right: 92px;
+    transition: all .3s;
+}
+
+.cts-open img {
+    padding-left: 180px;
+}
+
+.cities {
+    position: absolute;
+    left: -542px;
+    top: 0px;
+}
+
+.cities:nth-child(1) {
+    position: absolute;
+}
+
+.cities:nth-child(2) {
+    position: absolute;
+
+}
+
+.cities:nth-child(3) {
+    position: absolute;
+
+}
+
+.cities:nth-child(4) {
+    position: absolute;
+
+}
+
+.cts-open-div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    margin-left: 0px;
+    width: 448px;
+    height: 214px;
+    border: 2px solid #000000;
+    border-radius: 20px;
+    justify-content: space-around;
+}
+
+.cards-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 40px;
+}
+
+.card-titles {
+    font-family: Inter-Regular;
+    font-size: 16px;
+    color: #000000;
+
+}
+
+.card-data {
+    font-family: Inter-Regular;
+    font-size: 16px;
+    color: #717171;
+    margin-left: 10px;
+}
+
+.cards-block p {
+    line-height: 40px;
+}
+
+.crds-call-btn {
+    width: 122px;
+    height: 26px;
+    border: 1px solid #E06733;
+    border-radius: 5px;
+    text-align: center;
+    font-family: Inika-Bold;
+    font-size: 10px;
+    color: #717171;
+    padding-top: 1px;
+    margin-bottom: 20px;
+}
+
+.crds-call-btn a {
+    text-decoration: none;
+    color: #717171;
+}
+
+
 
 /*------------------------------*/
 .footer {
@@ -578,10 +835,24 @@ div.git {
     padding-left: 28px;
 }
 
+/*interaction----------------------*/
+div.pic.blur {
+    filter: blur(5px);
+    transition: all .3s;
+}
+
+.service-buttons button.pushed {
+    color: #FFFFFF;
+    background-color: #E06733;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+
+
 /*media queries--------------------*/
 /*768px--------------------*/
 @media (max-width: 768px) {
-
     .header {
         display: flex;
         height: 117px;
@@ -749,7 +1020,7 @@ div.git {
         padding-top: 2px;
     }
 
-    .price-buttons div {
+    .price-buttons div.price-btn {
         padding-bottom: 5px;
         padding-left: 42px;
     }
@@ -793,7 +1064,7 @@ div.git {
         margin-right: 0px;
     }
 
-    div.city {
+    details.city {
         margin-top: 101px;
         margin-right: 3px;
     }
@@ -1047,7 +1318,40 @@ div.git {
         padding-bottom: 13px;
     }
 
-    .price-buttons div {
+    .prcs-panels {
+        width: 180px;
+    }
+
+    .prcs-panels:nth-child(2) {
+        left: 20px;
+    }
+
+    .prcs-panels:nth-child(4) {
+        left: 20px;
+        top: 138px;
+    }
+
+    .prcs-panels:nth-child(6) {
+        left: 20px;
+        top: 203px;
+    }
+
+    .prcs-panels:nth-child(2) img {
+        top: -25px;
+        left: 125px;
+    }
+
+    .prcs-panels:nth-child(4) img {
+        top: -30px;
+        left: 125px;
+    }
+
+    .prcs-panels:nth-child(6) img {
+        top: -30px;
+        left: 125px;
+    }
+
+    .price-buttons div.price-btn {
         width: 180px;
         margin-left: auto;
         margin-right: auto;
@@ -1093,7 +1397,7 @@ div.git {
         margin-top: 25px;
     }
 
-    div.city {
+    details.city {
         margin-top: 83px;
         margin-left: 17px;
         margin-right: 17px;
@@ -1137,8 +1441,5 @@ div.git {
     .footer p.rss {
         margin-bottom: -6px;
     }
-
-
-
 
 }
