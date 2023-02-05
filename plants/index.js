@@ -155,3 +155,58 @@ document.querySelector('.prcs-panels:nth-child(6) img').addEventListener('click'
     document.querySelector('.price-buttons div.price-btn:nth-child(5)')
     .classList.remove('on-click')
 })
+
+/*-------------------------*/
+// document.querySelectorAll('.price-btn').forEach((el) => {
+//     el.addEventListener('click', () => {
+
+//         let content = el.nextElementSibling;
+//         console.log(content);
+//         if (content.classList.contains('.prcs-panels')) {
+//             document.querySelectorAll('.prcs-panels').forEach((el) => 
+//                 el.style.className.remove('hide'));
+            
+//         }
+//     })
+// })
+
+/*Contacts section*/
+document.querySelectorAll('.cts').forEach((el) => {
+    el.addEventListener('click', () => {
+        document.querySelector('details').removeAttribute('open');
+    })
+})
+
+document.getElementById('cts1').addEventListener('click', () => {
+    document.querySelector('.cities:nth-child(1)')
+    .classList.remove('close')
+})
+
+document.getElementById('cts2').addEventListener('click', () => {
+    document.querySelector('.cities:nth-child(2)')
+    .classList.remove('close')
+})
+
+document.getElementById('cts3').addEventListener('click', () => {
+    document.querySelector('.cities:nth-child(3)')
+    .classList.remove('close')
+})
+
+document.getElementById('cts4').addEventListener('click', () => {
+    document.querySelector('.cities:nth-child(4)')
+    .classList.remove('close')
+})
+
+
+
+// document.querySelectorAll('.cts-open img').forEach((el) => {
+//     el.addEventListener('click', () => {
+//         document.querySelector('details').toggleAttribute('open');
+//     })
+// })
+
+// document.querySelectorAll('.cts').forEach((el) => {
+//     el.addEventListener('click', () => {
+//         document.querySelector('.cities'&&!'.close').add('close');
+//     })
+// })
