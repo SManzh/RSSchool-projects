@@ -16,81 +16,106 @@ document.addEventListener("DOMContentLoaded", function(){
     })
 });
 
-/*focus on services*/
+/*Garden button----------*/
 const gardenButton = document.getElementById('gard-btn');
-
-gardenButton.addEventListener('click', (event) => {
-    document.getElementById('gard-btn').classList.toggle('pushed');
-})
-gardenButton.addEventListener('click', (event) => {
-    document.querySelector('.planting-blur').classList.add('blur');
-})
-gardenButton.addEventListener('click', (event) => {
-    document.querySelector('.lawn-blur').classList.add('blur');
-})
-gardenButton.addEventListener('click', (event) => {
-    document.querySelector('.planting-blur2').classList.add('blur');
-})
-gardenButton.addEventListener('click', (event) => {
-    document.querySelector('.planting-blur3').classList.add('blur');
-})
-gardenButton.addEventListener('click', (event) => {
-    document.querySelector('.garden-blur').classList.remove('blur');
-})
-gardenButton.addEventListener('click', (event) => {
-    document.querySelector('.garden-blur2').classList.remove('blur');
-})
-
-
 const lawnButton = document.getElementById('lawn-btn');
-
-lawnButton.addEventListener('click', (event) => {
-    document.getElementById('lawn-btn').classList.toggle('pushed');
-})
-lawnButton.addEventListener('click', (event) => {
-    document.querySelector('.planting-blur').classList.add('blur');
-})
-lawnButton.addEventListener('click', (event) => {
-    document.querySelector('.planting-blur2').classList.add('blur');
-})
-lawnButton.addEventListener('click', (event) => {
-    document.querySelector('.planting-blur3').classList.add('blur');
-})
-lawnButton.addEventListener('click', (event) => {
-    document.querySelector('.garden-blur').classList.add('blur');
-})
-lawnButton.addEventListener('click', (event) => {
-    document.querySelector('.garden-blur2').classList.add('blur');
-})
-lawnButton.addEventListener('click', (event) => {
-    document.querySelector('.lawn-blur').classList.remove('blur');
-})
-
-/*Blur on service section------------------------*/
-
 const plantingButton = document.getElementById('planting-btn');
 
-plantingButton.addEventListener('click', (event) => {
-    document.getElementById('planting-btn').classList.toggle('pushed');
+gardenButton.addEventListener('click', (event) => {
+    if ((lawnButton.classList.contains('pushed'))&&(plantingButton.classList.contains('pushed'))) {
+
+    } else if ((lawnButton.classList.contains('pushed'))||(plantingButton.classList.contains('pushed'))) {
+        
+        document.getElementById('gard-btn').classList.toggle('pushed')
+        
+        document.querySelector('.garden-blur').classList.toggle('blur')
+
+        document.querySelector('.garden-blur2').classList.toggle('blur')
+
+    } else  {
+        
+        document.getElementById('gard-btn').classList.toggle('pushed')
+        
+        document.querySelector('.garden-blur').classList.remove('blur')
+
+        document.querySelector('.garden-blur2').classList.remove('blur')
+
+        document.querySelector('.planting-blur').classList.add('blur')
+        
+        document.querySelector('.planting-blur2').classList.add('blur')
+              
+        document.querySelector('.planting-blur3').classList.add('blur')
+        
+        document.querySelector('.lawn-blur').classList.add('blur')
+    
+    }
 })
-plantingButton.addEventListener('click', (event) => {
-    document.querySelector('.planting-blur').classList.remove('blur');
+
+
+lawnButton.addEventListener('click', (event) => {
+    if ((gardenButton.classList.contains('pushed'))&&(plantingButton.classList.contains('pushed'))) {
+
+    } else if ((gardenButton.classList.contains('pushed'))||(plantingButton.classList.contains('pushed'))) {
+        
+        document.getElementById('lawn-btn').classList.toggle('pushed')
+        
+        document.querySelector('.lawn-blur').classList.toggle('blur')
+
+    } else  {
+        
+        document.getElementById('lawn-btn').classList.toggle('pushed')
+        
+        document.querySelector('.garden-blur').classList.add('blur')
+
+        document.querySelector('.garden-blur2').classList.add('blur')
+
+        document.querySelector('.planting-blur').classList.add('blur')
+        
+        document.querySelector('.planting-blur2').classList.add('blur')
+              
+        document.querySelector('.planting-blur3').classList.add('blur')
+        
+        document.querySelector('.lawn-blur').classList.remove('blur')
+    
+    }
 })
+
+
 plantingButton.addEventListener('click', (event) => {
-    document.querySelector('.planting-blur2').classList.remove('blur');
+    if ((gardenButton.classList.contains('pushed'))&&(lawnButton.classList.contains('pushed'))) {
+
+    } else if ((gardenButton.classList.contains('pushed'))||(lawnButton.classList.contains('pushed'))) {
+        
+        document.getElementById('planting-btn').classList.toggle('pushed')
+        
+        document.querySelector('.planting-blur').classList.toggle('blur')
+
+        document.querySelector('.planting-blur2').classList.toggle('blur')
+
+        document.querySelector('.planting-blur3').classList.toggle('blur')
+
+    } else  {
+        
+        document.getElementById('planting-btn').classList.toggle('pushed')
+        
+        document.querySelector('.garden-blur').classList.add('blur')
+
+        document.querySelector('.garden-blur2').classList.add('blur')
+
+        document.querySelector('.planting-blur').classList.remove('blur')
+        
+        document.querySelector('.planting-blur2').classList.remove('blur')
+              
+        document.querySelector('.planting-blur3').classList.remove('blur')
+        
+        document.querySelector('.lawn-blur').classList.add('blur')
+    
+    }
 })
-plantingButton.addEventListener('click', (event) => {
-    document.querySelector('.planting-blur3').classList.remove('blur');
-})
-plantingButton.addEventListener('click', (event) => {
-    document.querySelector('.garden-blur').classList.add('blur');
-})
-plantingButton.addEventListener('click', (event) => {
-    document.querySelector('.garden-blur2').classList.add('blur');
-})
-plantingButton.addEventListener('click', (event) => {
-    document.querySelector('.lawn-blur').classList.add('blur');
-})
+
+
+
+
 
 /*Price section accordion-------------*/
 /*Basics*/
@@ -98,7 +123,6 @@ document.getElementById('arr-prices-1').addEventListener('click', (event)=>{
     document.querySelector('.prcs-panels:nth-child(2)')
     .classList.remove('hide');
 })
-
 document.getElementById('arr-prices-1').addEventListener('click', (event)=>{
     document.querySelector('.price-buttons div.price-btn:nth-child(1)')
     .classList.add('on-click')
@@ -108,9 +132,26 @@ document.querySelector('.prcs-panels:nth-child(2) img').addEventListener('click'
     document.querySelector('.prcs-panels:nth-child(2)')
     .classList.add('hide');
 })
-
 document.querySelector('.prcs-panels:nth-child(2) img').addEventListener('click', (event) => {
     document.querySelector('.price-buttons div.price-btn:nth-child(1)')
+    .classList.remove('on-click')
+})
+/*-----*/
+document.getElementById('arr-prices-1').addEventListener('click', (event)=>{
+    document.querySelector('.prcs-panels:nth-child(4)')
+    .classList.add('hide');
+})
+document.getElementById('arr-prices-1').addEventListener('click', (event)=>{
+    document.querySelector('.price-buttons div.price-btn:nth-child(3)')
+    .classList.remove('on-click')
+})
+
+document.getElementById('arr-prices-1').addEventListener('click', (event)=>{
+    document.querySelector('.prcs-panels:nth-child(6)')
+    .classList.add('hide');
+})
+document.getElementById('arr-prices-1').addEventListener('click', (event)=>{
+    document.querySelector('.price-buttons div.price-btn:nth-child(5)')
     .classList.remove('on-click')
 })
 
@@ -135,6 +176,27 @@ document.querySelector('.prcs-panels:nth-child(4) img').addEventListener('click'
     .classList.remove('on-click')
 })
 
+/*-----*/
+document.getElementById('arr-prices-2').addEventListener('click', (event)=>{
+    document.querySelector('.prcs-panels:nth-child(2)')
+    .classList.add('hide');
+})
+
+document.getElementById('arr-prices-2').addEventListener('click', (event)=>{
+    document.querySelector('.price-buttons div.price-btn:nth-child(1)')
+    .classList.remove('on-click')
+})
+
+document.getElementById('arr-prices-2').addEventListener('click', (event)=>{
+    document.querySelector('.prcs-panels:nth-child(6)')
+    .classList.add('hide');
+})
+
+document.getElementById('arr-prices-2').addEventListener('click', (event)=>{
+    document.querySelector('.price-buttons div.price-btn:nth-child(5)')
+    .classList.remove('on-click')
+})
+
 /*Pro care*/
 document.getElementById('arr-prices-3').addEventListener('click', (event)=>{
     document.querySelector('.prcs-panels:nth-child(6)')
@@ -156,19 +218,27 @@ document.querySelector('.prcs-panels:nth-child(6) img').addEventListener('click'
     .classList.remove('on-click')
 })
 
-/*-------------------------*/
-// document.querySelectorAll('.price-btn').forEach((el) => {
-//     el.addEventListener('click', () => {
+/*-----*/
+document.getElementById('arr-prices-3').addEventListener('click', (event)=>{
+    document.querySelector('.prcs-panels:nth-child(2)')
+    .classList.add('hide');
+})
 
-//         let content = el.nextElementSibling;
-//         console.log(content);
-//         if (content.classList.contains('.prcs-panels')) {
-//             document.querySelectorAll('.prcs-panels').forEach((el) => 
-//                 el.style.className.remove('hide'));
-            
-//         }
-//     })
-// })
+document.getElementById('arr-prices-3').addEventListener('click', (event)=>{
+    document.querySelector('.price-buttons div.price-btn:nth-child(1)')
+    .classList.remove('on-click')
+})
+
+document.getElementById('arr-prices-3').addEventListener('click', (event)=>{
+    document.querySelector('.prcs-panels:nth-child(4)')
+    .classList.add('hide');
+})
+
+document.getElementById('arr-prices-3').addEventListener('click', (event)=>{
+    document.querySelector('.price-buttons div.price-btn:nth-child(3)')
+    .classList.remove('on-click')
+})
+
 
 /*Contacts section*/
 document.querySelectorAll('.cts').forEach((el) => {
@@ -177,36 +247,93 @@ document.querySelectorAll('.cts').forEach((el) => {
     })
 })
 
+/*1st option-----*/
 document.getElementById('cts1').addEventListener('click', () => {
     document.querySelector('.cities:nth-child(1)')
     .classList.remove('close')
 })
 
+document.getElementById('cts1').addEventListener('click', () => {
+    document.querySelector('.cities:nth-child(2)')
+    .classList.add('close')
+})
+
+document.getElementById('cts1').addEventListener('click', () => {
+    document.querySelector('.cities:nth-child(3)')
+    .classList.add('close')
+})
+
+document.getElementById('cts1').addEventListener('click', () => {
+    document.querySelector('.cities:nth-child(4)')
+    .classList.add('close')
+})
+
+/*2nd option-----*/
 document.getElementById('cts2').addEventListener('click', () => {
     document.querySelector('.cities:nth-child(2)')
     .classList.remove('close')
 })
 
+document.getElementById('cts2').addEventListener('click', () => {
+    document.querySelector('.cities:nth-child(1)')
+    .classList.add('close')
+})
+
+document.getElementById('cts2').addEventListener('click', () => {
+    document.querySelector('.cities:nth-child(3)')
+    .classList.add('close')
+})
+
+document.getElementById('cts2').addEventListener('click', () => {
+    document.querySelector('.cities:nth-child(4)')
+    .classList.add('close')
+})
+
+/*3rd option-----*/
 document.getElementById('cts3').addEventListener('click', () => {
     document.querySelector('.cities:nth-child(3)')
     .classList.remove('close')
 })
 
+document.getElementById('cts3').addEventListener('click', () => {
+    document.querySelector('.cities:nth-child(1)')
+    .classList.add('close')
+})
+
+document.getElementById('cts3').addEventListener('click', () => {
+    document.querySelector('.cities:nth-child(2)')
+    .classList.add('close')
+})
+
+document.getElementById('cts3').addEventListener('click', () => {
+    document.querySelector('.cities:nth-child(4)')
+    .classList.add('close')
+})
+
+/*4th option-----*/
 document.getElementById('cts4').addEventListener('click', () => {
     document.querySelector('.cities:nth-child(4)')
     .classList.remove('close')
 })
 
+document.getElementById('cts4').addEventListener('click', () => {
+    document.querySelector('.cities:nth-child(1)')
+    .classList.add('close')
+})
 
+document.getElementById('cts4').addEventListener('click', () => {
+    document.querySelector('.cities:nth-child(2)')
+    .classList.add('close')
+})
 
-// document.querySelectorAll('.cts-open img').forEach((el) => {
-//     el.addEventListener('click', () => {
-//         document.querySelector('details').toggleAttribute('open');
-//     })
-// })
+document.getElementById('cts4').addEventListener('click', () => {
+    document.querySelector('.cities:nth-child(3)')
+    .classList.add('close')
+})
 
-// document.querySelectorAll('.cts').forEach((el) => {
-//     el.addEventListener('click', () => {
-//         document.querySelector('.cities'&&!'.close').add('close');
-//     })
-// })
+/*-----*/
+document.querySelectorAll('.cts-open img').forEach((el) => {
+    el.addEventListener('click', () => {
+        document.querySelector('details').toggleAttribute('open');
+    })
+})

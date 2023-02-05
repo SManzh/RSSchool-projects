@@ -404,6 +404,7 @@ div.capt p:nth-child(2) {
     padding-left: 40px;
     padding-top: 6px;;
     margin-left: 38px;
+    transition: all .5s;
 }
 
 .price-buttons div.price-btn img:hover {
@@ -419,12 +420,14 @@ div.capt p:nth-child(2) {
     background-color: #D6E7D2;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
+    transition: all .3s;
 }
 
 .prcs-panels {
     display: flex;
     flex-direction: column;
     width: 250px;
+    transition: all .3s;
 }
 
 .prcs-panels:nth-child(2) {
@@ -1086,6 +1089,11 @@ div.pic.blur {
         padding-left: 21px;
         padding-bottom: 4px;
     }
+
+    .cities {
+        left: -226px;
+        top: 45px;
+    }
     
     /*--------------------*/    
     
@@ -1420,6 +1428,30 @@ div.pic.blur {
     .contact-woman img {
         width: 31%;
         padding-left: 0px;
+    }
+
+    .cities {
+        left: -226px;
+        top: -7px;
+    }
+
+    p.cts-open {
+        width: 300px;
+        margin-left: 76px;
+    }
+
+    .cts-open-div {
+        width: 300px;
+        margin-left: 76px;
+        margin-top: 10px;
+    }
+
+    .cts-open img {
+        padding-left: 65px;
+    }
+
+    details.city img {
+        margin-left: 198px;
     }
 
     /*--------------------*/
