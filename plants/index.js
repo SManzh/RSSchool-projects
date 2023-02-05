@@ -32,6 +32,22 @@ gardenButton.addEventListener('click', (event) => {
 
         document.querySelector('.garden-blur2').classList.toggle('blur')
 
+    } else if (!(lawnButton.classList.contains('pushed'))&&!(plantingButton.classList.contains('pushed'))&&gardenButton.classList.contains('pushed')) {
+
+        document.getElementById('gard-btn').classList.toggle('pushed')
+
+        document.querySelector('.garden-blur').classList.remove('blur')
+
+        document.querySelector('.garden-blur2').classList.remove('blur')
+
+        document.querySelector('.planting-blur').classList.remove('blur')
+        
+        document.querySelector('.planting-blur2').classList.remove('blur')
+              
+        document.querySelector('.planting-blur3').classList.remove('blur')
+        
+        document.querySelector('.lawn-blur').classList.remove('blur')
+
     } else  {
         
         document.getElementById('gard-btn').classList.toggle('pushed')
@@ -60,6 +76,22 @@ lawnButton.addEventListener('click', (event) => {
         document.getElementById('lawn-btn').classList.toggle('pushed')
         
         document.querySelector('.lawn-blur').classList.toggle('blur')
+
+    } else if (!(gardenButton.classList.contains('pushed'))&&!(plantingButton.classList.contains('pushed'))&&lawnButton.classList.contains('pushed')) {
+
+        document.getElementById('lawn-btn').classList.toggle('pushed')
+
+        document.querySelector('.garden-blur').classList.remove('blur')
+
+        document.querySelector('.garden-blur2').classList.remove('blur')
+
+        document.querySelector('.planting-blur').classList.remove('blur')
+        
+        document.querySelector('.planting-blur2').classList.remove('blur')
+              
+        document.querySelector('.planting-blur3').classList.remove('blur')
+        
+        document.querySelector('.lawn-blur').classList.remove('blur')
 
     } else  {
         
@@ -93,6 +125,22 @@ plantingButton.addEventListener('click', (event) => {
         document.querySelector('.planting-blur2').classList.toggle('blur')
 
         document.querySelector('.planting-blur3').classList.toggle('blur')
+
+    } else if (!(gardenButton.classList.contains('pushed'))&&!(lawnButton.classList.contains('pushed'))&&plantingButton.classList.contains('pushed')) {
+
+        document.getElementById('planting-btn').classList.toggle('pushed')
+
+        document.querySelector('.garden-blur').classList.remove('blur')
+
+        document.querySelector('.garden-blur2').classList.remove('blur')
+
+        document.querySelector('.planting-blur').classList.remove('blur')
+        
+        document.querySelector('.planting-blur2').classList.remove('blur')
+              
+        document.querySelector('.planting-blur3').classList.remove('blur')
+        
+        document.querySelector('.lawn-blur').classList.remove('blur')
 
     } else  {
         
