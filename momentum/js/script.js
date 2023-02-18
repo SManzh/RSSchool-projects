@@ -5,13 +5,25 @@ const date = new Date();
 const options = {weekday: 'long', month: 'long', day: 'numeric'};
 const hours = date.getHours();
 
+const timeOfDay = getTimeOfDay();
+const greetingText = `Good ${timeOfDay}`;
+
+
 
 function showTime(date) {
     date = new Date();
     const currentTime = date.toLocaleTimeString();
     const currentDate = date.toLocaleDateString('en-US', options);
+    const hours = date.getHours();
+    
+    function showGreeting(){
+        greeting.textContent = greetingText;
+    }
+    showGreeting();
+
     time.textContent = currentTime;
     day.textContent = currentDate;
+    greeting.textContent = greetingText;
     
     setTimeout(showTime, 1000);
 }
@@ -28,3 +40,17 @@ function getTimeOfDay(hours) {
        return "evening";
     }
 }
+
+let username = document.querySelector('.name');
+
+function setLocalStorage() {
+    localStorage.setItem('username', username.value);
+}
+window.addEventListener('beforeunload', setLocalStorage);
+
+function getLocalStorage() {
+    if(localStorage.getItem('username')) {
+        username.value = localStorage.getItem('username');
+    }
+}
+window.addEventListener('load', getLocalStorage);
