@@ -4,6 +4,7 @@ const day = document.querySelector('.date');
 const date = new Date();
 const options = {weekday: 'long', month: 'long', day: 'numeric'};
 const hours = date.getHours();
+const body = document.querySelector('.body');
 
 const timeOfDay = getTimeOfDay();
 const greetingText = `Good ${timeOfDay}`;
@@ -29,7 +30,7 @@ function showTime(date) {
 }
 showTime();
 
-function getTimeOfDay(hours) {
+function getTimeOfDay() {
     if ((hours>=0)&&(hours<6)){
         return "night";
     } else if ((hours>=6)&&(hours<12)){
@@ -37,7 +38,7 @@ function getTimeOfDay(hours) {
     } else if ((hours>=12)&&(hours<18)){
         return "afternoon";
     } else {
-       return "evening";
+        return "evening";
     }
 }
 
@@ -54,3 +55,45 @@ function getLocalStorage() {
     }
 }
 window.addEventListener('load', getLocalStorage);
+
+
+function getRandomNum() {
+    return Math.floor(Math.random()*20 + 1);
+}
+let randomNum = getRandomNum();
+
+function setBG() {
+    let bgNum = randomNum.toString().padStart(2, '0');
+    const img = new Image();
+    img.src = `https://raw.githubusercontent.com/smanzh/assets/master/images/${timeOfDay}/${bgNum}.webp`;
+    img.onload = () => {
+        body.style.backgroundImage = `url(${img.src})`;
+    }  
+}
+setBG();
+
+const prevSlide = document.querySelector('.slide-prev');
+function getPrevSlide () {
+    if (randomNum>1) {
+        randomNum--;
+    } else {
+        randomNum = 20;
+    }
+    setBG();
+}
+prevSlide.addEventListener("click", function(){
+    getPrevSlide();
+})
+
+const nextSlide = document.querySelector('.slide-next');
+function getNextSlide () {
+    if (randomNum<20) {
+        randomNum++;
+    } else {
+        randomNum = 1;
+    }
+    setBG();
+}
+nextSlide.addEventListener("click", function(){
+    getNextSlide();
+})
