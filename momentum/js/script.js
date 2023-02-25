@@ -137,3 +137,24 @@ async function getWeather() {
 }
 getWeather();
 
+/*----------Quotes----------*/
+const quote = document.querySelector(".quote");
+const author = document.querySelector(".author");
+
+
+async function getQuotes() {  
+    const quotes = './assets/data.json';
+    const res = await fetch(quotes);
+    const data = await res.json(); 
+    
+    let i = Math.round(Math.random() * 7) - 1;
+    quote.textContent = "\""+data[i].text+"\"";
+    author.textContent = data[i].author;
+}
+getQuotes();
+
+const changeQuote = document.querySelector(".change-quote");
+changeQuote.addEventListener("click", function() {
+    getQuotes();
+})
+
