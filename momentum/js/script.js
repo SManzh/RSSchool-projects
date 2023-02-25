@@ -147,9 +147,10 @@ async function getQuotes() {
     const res = await fetch(quotes);
     const data = await res.json(); 
     
-    let i = Math.round(Math.random() * 7) - 1;
-    quote.textContent = "\""+data[i].text+"\"";
+    let i = Math.floor(Math.random() * 10);
+    quote.textContent = "\"" + data[i].text + "\"";
     author.textContent = data[i].author;
+    console.log(i);
 }
 getQuotes();
 
