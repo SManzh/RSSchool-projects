@@ -216,3 +216,55 @@ nextTrack.addEventListener("click", function() {
     playAudio();
 });
 
+/*----------To do List----------*/
+const toDoHeader = document.querySelector('.to-do-header');
+toDoHeader.textContent = "To do list:";
+let todo = document.querySelector('.todo');
+
+let addMessage = document.querySelector('.to-do-list'),
+    addButton = document.querySelector('.add');
+
+let todoList = [];
+
+if (localStorage.getItem('todo')){
+    todoList = JSON.parse(localStorage.getItem('todo'));
+    displayMessages();
+}
+
+addButton.addEventListener('click', function(){
+
+    let newToDo = {
+        todo: addMessage.value,
+        checked: false,
+        important: false,
+    }
+
+    todoList.push(newToDo);
+    displayMessages();
+    localStorage.setItem('todo', JSON.stringify(todoList));
+})
+
+function displayMessages(){
+    let displayMessage = '';
+    todoList.forEach(function(item, index){
+        displayMessage += `
+            <li>
+                <input type='checkbox' id='item_${index}' ${item.checked ? 'checked':''}>
+                <label for='item_${index}'>${item.todo}</label>
+            </li>
+        `;
+        todo.innerHTML = displayMessage
+    });
+}
+
+
+todo.addEventListener('change', function(event){
+    let valueLabel = todo.querySelector('[for='+ event.target.getAttribute('id') + ']').innerHTML;
+
+    todoList.forEach(function(item){
+        if (item.todo === valueLabel) {
+            item.checked = !item.checked;
+            localStorage.setItem('todo', JSON.stringify(todoList));
+        }
+    })
+})
