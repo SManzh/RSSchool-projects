@@ -167,17 +167,17 @@ let audioDir = './assets/sounds/';
 let audioExt = '.mp3';
 let isPlay = false;
 const tracks = [
-    `${audioDir}Aqua Caelestis${audioExt}`,
-    `${audioDir}Ennio Morricone${audioExt}`,
-    `${audioDir}River Flows In You${audioExt}`,
-    `${audioDir}Summer Wind${audioExt}`,
+    `Aqua Caelestis`,
+    `Ennio Morricone`,
+    `River Flows In You`,
+    `Summer Wind`,
 ] 
-const playList = document.querySelector('.play-list');
+let playList = document.querySelector('.play-list');
 let i = 0;
 
 function playAudio() {
   audio.currentTime = 0;
-  audio.src = tracks[i];
+  audio.src = audioDir+tracks[i]+audioExt;
   playList.textContent = tracks[i];
   if (isPlay === false){
     isPlay = true;
@@ -215,5 +215,4 @@ nextTrack.addEventListener("click", function() {
     audio.pause();
     playAudio();
 });
-
 
