@@ -150,7 +150,6 @@ async function getQuotes() {
     let i = Math.floor(Math.random() * 10);
     quote.textContent = "\"" + data[i].text + "\"";
     author.textContent = data[i].author;
-    console.log(i);
 }
 getQuotes();
 
@@ -158,4 +157,63 @@ const changeQuote = document.querySelector(".change-quote");
 changeQuote.addEventListener("click", function() {
     getQuotes();
 })
+
+/*----------Audio player----------*/
+const playBtn = document.querySelector('.play');
+const prevTrack = document.querySelector('.play-prev');
+const nextTrack = document.querySelector('.play-next');
+const audio = new Audio();
+let audioDir = './assets/sounds/';
+let audioExt = '.mp3';
+let isPlay = false;
+const tracks = [
+    `${audioDir}Aqua Caelestis${audioExt}`,
+    `${audioDir}Ennio Morricone${audioExt}`,
+    `${audioDir}River Flows In You${audioExt}`,
+    `${audioDir}Summer Wind${audioExt}`,
+] 
+const playList = document.querySelector('.play-list');
+let i = 0;
+
+function playAudio() {
+  audio.currentTime = 0;
+  audio.src = tracks[i];
+  playList.textContent = tracks[i];
+  if (isPlay === false){
+    isPlay = true;
+    audio.play();
+    playBtn.classList.add('pause');
+  } else {
+    isPlay = false;
+    audio.pause();
+    playBtn.classList.remove('pause');
+  }
+}
+
+playBtn.addEventListener("click", function() {
+    playAudio();
+});
+
+prevTrack.addEventListener("click", function() {
+    if (i === 0) {
+        i = 3;
+    } else {    
+        i--;
+    }
+    isPlay = false;
+    audio.pause();
+    playAudio();
+});
+
+nextTrack.addEventListener("click", function() {
+    if (i === 3) {
+        i = 0;
+    } else {    
+        i++;
+    }
+    isPlay = false;
+    audio.pause();
+    playAudio();
+});
+
 
