@@ -144,6 +144,11 @@ body {
   outline: 0;
 }
 
+.important{
+  text-decoration: underline;
+  font-weight: bold;
+}
+
 .add {
   flex: 1;
   max-width: 50%;
