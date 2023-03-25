@@ -7,26 +7,26 @@
 
 /*-----header-----*/
 .start-screen {
-  height: 900px;
   background: url(../../../assets/images/noise_lines_transparent2X.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%) 
   /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, #211F20;
 }
 
 .header {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   max-width: 1280px;
   margin: 0 auto;
 }
 
 .logo {
   width: 184px;
+  flex-grow: 1;
+  margin-left: 2%;
 }
 
 .logo__title {
   font-family: Georgia, 'Times New Roman', Times, serif;
-
   font-weight: 400;
   font-size: 32px;
   line-height: 35px;
@@ -42,6 +42,15 @@
   line-height: 15px;
   letter-spacing: 10%;
   color: #FFFFFF;
+}
+
+.nav-menu {
+  flex-grow: 1;
+  max-width: 475px;
+}
+
+ul {
+  padding-inline-start: 0px;
 }
 
 .nav-menu__list {
@@ -68,3 +77,61 @@
 }
 
 /*----Not only-----*/
+.not-only {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.not-only__text {
+  max-width: 460px;
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  flex-grow: 1;
+  margin-left: 2%;
+}
+
+.not-only__heading {
+  max-width: 310px;
+  margin-left: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 130%;
+  color: #FFFFFF;
+}
+
+.not-only__description {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 160%;
+  color: #CDCDCD;
+}
+
+.not-only__picture img {
+  width: 698px;
+}
+
+.not-only__btn {
+  margin-left: 0;
+  width: 207px;
+  height: 52px;
+  border-radius: 100px;
+  color: #292929;
+  background-color: #F1CDB3;
+  border: none;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+}
+
+/*-----About-----*/
