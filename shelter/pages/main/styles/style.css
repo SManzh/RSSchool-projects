@@ -141,7 +141,6 @@ ul {
   align-items: center;
   max-width: 1280px;
   margin: 0 auto;
-  background-color: #FFFFFF;
 }
 
 .about__picture img {
@@ -185,3 +184,89 @@ ul {
 }
 
 /*-----Our friends-----*/
+.wrapper-our-friends {
+  background-color: #F6F6F6;
+}
+
+.our-friends {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.our-friends__heading {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: #545454;
+  max-width: 400px;
+  text-align: center;
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+}
+
+.slider__right-btn img {
+  transform: rotate(-180deg);
+}
+
+.slider__cards {
+  display: flex;
+}
+
+.slider__card {
+  display: flex;
+  flex-direction: column;
+  background-color: #FAFAFA;;
+}
+
+.slider__card__name {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.06em;
+  color: #545454;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.slider__card__btn {
+  width: 187px;
+  height: 52px;
+  border: 2px solid #F1CDB3;
+  border-radius: 100px;
+  color: #292929;
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+}
+
+.our-friends__btn {
+  width: 261px;
+  height: 52px;
+  background: #F1CDB3;
+  border-radius: 100px;
+  border: none;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: #292929;
+  margin-top: 60px;
+  margin-bottom: 100px;
+}
