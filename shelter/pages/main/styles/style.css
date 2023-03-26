@@ -321,3 +321,77 @@ ul {
 }
 
 /*-----In addition-----*/
+.wrapper-in-addition {
+  background-color: #F6F6F6;
+}
+
+.in-addition {
+  display: flex;
+  padding-bottom: 100px;
+}
+
+.in-addition__picture {
+  max-width: 505px;
+}
+
+.in-addition__text {
+  display: flex;
+  flex-direction: column;
+}
+
+.in-addition__heading {
+  margin-left: 0;
+  max-width: 300px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: #545454;
+}
+
+.in-addition__subheading {
+  margin-left: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 110%;
+  letter-spacing: 0.06em;
+  color: #545454;
+}
+
+.in-addition__credit-card {
+  margin-left: 0;
+  margin-bottom: 20px;
+  width: 349px;
+  height: 43px;
+  border-radius: 9px;
+  background-color: #F1CDB3;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.in-addition__credit-card span {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  color: #545454;
+}
+
+.in-addition__legal-info {
+  max-width: 380px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #B2B2B2;
+}
