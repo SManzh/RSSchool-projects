@@ -1,1 +1,1 @@
-console.log("Hello!");
+console.log("Preliminary mark - 100");
