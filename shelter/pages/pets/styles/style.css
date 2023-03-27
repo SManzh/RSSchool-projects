@@ -23,6 +23,7 @@
   width: 184px;
   flex-grow: 1;
   margin-left: 40px;
+  text-decoration: none;
 }
 
 .logo__title {
@@ -273,6 +274,11 @@ table {
 
 .footer__contacts td {
   height: 70px;
+}
+
+td a {
+  text-decoration: none;
+  color: #F1CDB3;;
 }
 
 .footer__address {
