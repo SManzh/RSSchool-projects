@@ -14,15 +14,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 120px;
   max-width: 1280px;
   margin: 0 auto;
+  height: 120px;
 }
 
 .logo {
   width: 184px;
   flex-grow: 1;
-  margin-left: 2%;
+  margin-left: 40px;
 }
 
 .logo__title {
@@ -30,7 +30,7 @@
   font-weight: 400;
   font-size: 32px;
   line-height: 35px;
-  letter-spacing: 6%;
+  letter-spacing: 2px;
   color: #545454;
 }
 
@@ -40,13 +40,16 @@
   font-weight: 400;
   font-size: 13px;
   line-height: 15px;
-  letter-spacing: 10%;
+  letter-spacing: 1.5px;
   color: #292929;
+  padding-top: 11px;
+  padding-left: 2px;
 }
 
 .nav-menu {
   flex-grow: 1;
   max-width: 475px;
+  margin-right: 10px;
 }
 
 ul {
@@ -72,8 +75,21 @@ ul {
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
-  letter-spacing: 10%;
   color: #545454;
+}
+
+a.active {
+  color: #292929;
+  text-decoration: underline;
+  text-decoration-color: #F1CDB3;
+  text-underline-offset: 7px;
+}
+
+.nav-menu__link:hover {
+  color: #292929;
+  text-decoration: underline;
+  text-decoration-color: #F1CDB3;
+  text-underline-offset: 7px;
 }
 
 /*-----Pets-----*/
@@ -99,11 +115,16 @@ ul {
   color: #545454;
   max-width: 400px;
   text-align: center;
+  padding-top: 81px;
+  padding-left: 18px;
+  padding-bottom: 58px;
+  max-width: 430px;
 }
 
 .content {
   display: flex;
   align-items: center;
+  padding-left: 14px;
 }
 
 .content__right-btn img {
@@ -118,7 +139,8 @@ ul {
 .content__card {
   display: flex;
   flex-direction: column;
-  background-color: #FAFAFA;;
+  background-color: #FAFAFA;
+  padding-bottom: 60px;
 }
 
 .content__card__name {
@@ -148,7 +170,8 @@ ul {
 }
 
 .pets__navigation {
-  margin-top: 45px;
+  margin-top: 30px;
+  padding-left: 16px;
 }
 
 .pets__navigation button {
@@ -156,8 +179,8 @@ ul {
   border-radius: 50%;
   width: 52px;
   height: 52px;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 8px;
+  margin-right: 8px;
 }
 
 .pets__navigation button:nth-child(3) {
@@ -175,3 +198,74 @@ ul {
 }
 
 /*-----Footer-----*/
+.wrapper-footer {
+  background: url(../../../assets/images/noise_lines_transparent2X.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%) 
+  /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, #211F20;
+  display: flex;
+}
+
+.footer {
+  display: flex;
+  max-width: 1280px;
+  margin: 0 auto;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.footer__contact {
+  margin-left: 3%;
+}
+
+.footer__heading {
+  margin-left: 0;
+  margin-top: 56px;
+  max-width: 280px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: #FFFFFF;
+  padding-bottom: 20px;
+}
+
+.footer__contacts {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  color: #F1CDB3;
+  flex-grow: 1;
+}
+
+table {
+  margin-left: 0;
+}
+
+.footer__contacts img {
+  margin-right: 20px;
+  margin-left: 0;
+}
+
+.footer__contacts td {
+  height: 70px;
+}
+
+.footer__address {
+  max-width: 320px;
+  flex-grow: 1;
+  margin-left: 12.5%;
+}
+
+.footer__picture {
+  flex-grow: 1;
+  margin-left: 11%;
+}
+
+.footer__picture img {
+  width: 300px;
+  margin-top: 35px;
+}
