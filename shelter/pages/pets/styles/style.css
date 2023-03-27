@@ -90,6 +90,7 @@ a.active {
   text-decoration: underline;
   text-decoration-color: #F1CDB3;
   text-underline-offset: 7px;
+  transition: background-color 0.9s;
 }
 
 /*-----Pets-----*/
@@ -143,6 +144,12 @@ a.active {
   padding-bottom: 60px;
 }
 
+.content__card:hover {
+  background-color: #F1CDB3;
+  cursor: pointer;
+  transition: background-color 0.9s;
+}
+
 .content__card__name {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-style: normal;
@@ -182,6 +189,20 @@ a.active {
   margin-left: 8px;
   margin-right: 8px;
 }
+
+.pets__navigation button:not(.disabled):hover {
+  cursor: pointer;
+  background-color: #F1CDB3;
+  transition: background-color 0.9s;
+}
+
+.pets__navigation button.disabled {
+  border: 2px solid #CDCDCD;
+} 
+
+.pets__navigation button:not(.disabled) {
+  cursor: pointer;
+} 
 
 .pets__navigation button:nth-child(3) {
   background-color: #F1CDB3;

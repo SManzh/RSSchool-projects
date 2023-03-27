@@ -142,6 +142,10 @@ a.active {
 }
 
 .not-only__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
   margin-left: 0;
   width: 207px;
   height: 52px;
@@ -155,6 +159,10 @@ a.active {
   font-size: 17px;
   line-height: 130%;
   letter-spacing: 0.06em;
+}
+
+.not-only__btn:hover {
+  text-decoration: underline;
 }
 
 /*-----About-----*/
@@ -256,7 +264,7 @@ a.active {
 
 .slider__left-btn img {
   margin-top: 35px;
- }
+}
 
 .slider__right-btn img {
   transform: rotate(-180deg);
@@ -275,6 +283,12 @@ a.active {
   background-color: #FAFAFA;
   margin-left: 45px;
   margin-right: 45px;
+}
+
+.slider__card:hover {
+  cursor: pointer;
+  background-color: #F1CDB3;
+  transition: background-color 0.9s;
 }
 
 .slider__card__name {
@@ -304,6 +318,10 @@ a.active {
 }
 
 .our-friends__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
   width: 261px;
   height: 52px;
   background: #F1CDB3;
@@ -319,6 +337,10 @@ a.active {
   margin-top: 89px;
   margin-bottom: 100px;
   margin-left: 40.5%;
+}
+
+.our-friends__btn:hover {
+  text-decoration: underline;
 }
 
 /*-----Help-----*/
