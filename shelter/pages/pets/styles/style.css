@@ -50,7 +50,7 @@
 .nav-menu {
   flex-grow: 1;
   max-width: 475px;
-  margin-right: 10px;
+  margin-right: 25px;
 }
 
 ul {
@@ -118,7 +118,7 @@ a.active {
   max-width: 400px;
   text-align: center;
   padding-top: 81px;
-  padding-left: 18px;
+  padding-left: 0;
   padding-bottom: 58px;
   max-width: 430px;
 }
@@ -126,7 +126,7 @@ a.active {
 .content {
   display: flex;
   align-items: center;
-  padding-left: 14px;
+  padding-left: 20px;
 }
 
 .content__right-btn img {
@@ -142,10 +142,12 @@ a.active {
   display: flex;
   flex-direction: column;
   background-color: #FAFAFA;
+  margin-left: 20px;
+  margin-right: 20px;
   padding-bottom: 60px;
 }
 
-.content__card:hover {
+.content__card:hover button {
   background-color: #F1CDB3;
   cursor: pointer;
   transition: background-color 0.9s;
@@ -279,6 +281,7 @@ table {
 td a {
   text-decoration: none;
   color: #F1CDB3;;
+  margin-left: -3px;
 }
 
 .footer__address {
