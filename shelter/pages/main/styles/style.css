@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Georgia'; 
+  src: url(../../../assets/fonts/Georgia.ttf);
+}
+
+
+
 * {
   margin: 0 auto;
   box-sizing: border-box;
@@ -31,7 +38,7 @@ a {
 }
 
 .logo__title {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Georgia', 'Times New Roman', Times, serif;
   font-weight: 400;
   font-size: 32px;
   line-height: 35px;
@@ -121,7 +128,7 @@ a.active {
   max-width: 310px;
   margin-left: 0;
   margin-bottom: 42px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Georgia', 'Times New Roman', Times, serif;
   font-style: normal;
   font-weight: 400;
   font-size: 44px;
@@ -156,7 +163,7 @@ a.active {
   color: #292929;
   background-color: #F1CDB3;
   border: none;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Georgia', 'Times New Roman', Times, serif;
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
@@ -247,7 +254,7 @@ a.active {
 }
 
 .our-friends__heading {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Georgia', 'Times New Roman', Times, serif;
   font-style: normal;
   font-weight: 400;
   font-size: 35px;
@@ -322,7 +329,7 @@ a.active {
 }
 
 .slider__card__name {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Georgia', 'Times New Roman', Times, serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -370,7 +377,7 @@ a.active {
   background: #F1CDB3;
   border-radius: 100px;
   border: none;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Georgia', 'Times New Roman', Times, serif;
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
@@ -400,7 +407,7 @@ a.active {
 }
 
 .help__heading {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Georgia', 'Times New Roman', Times, serif;
   font-style: normal;
   font-weight: 400;
   font-size: 35px;
@@ -432,7 +439,7 @@ a.active {
 }
 
 .help__item__text {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Georgia', 'Times New Roman', Times, serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -471,7 +478,7 @@ a.active {
 .in-addition__heading {
   margin-left: 0;
   max-width: 300px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Georgia', 'Times New Roman', Times, serif;
   font-style: normal;
   font-weight: 400;
   font-size: 35px;
@@ -484,7 +491,7 @@ a.active {
   margin-left: 0;
   margin-top: 20px;
   margin-bottom: 20px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Georgia', 'Times New Roman', Times, serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -507,7 +514,7 @@ a.active {
 }
 
 .in-addition__credit-card span {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Georgia', 'Times New Roman', Times, serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -549,7 +556,7 @@ a.active {
   margin-left: 0;
   margin-top: 56px;
   max-width: 280px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Georgia', 'Times New Roman', Times, serif;
   font-style: normal;
   font-weight: 400;
   font-size: 35px;
@@ -560,7 +567,7 @@ a.active {
 }
 
 .footer__contacts {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Georgia', 'Times New Roman', Times, serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
