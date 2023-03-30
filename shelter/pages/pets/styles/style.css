@@ -84,14 +84,12 @@ a.active {
   text-decoration: underline;
   text-decoration-color: #F1CDB3;
   text-underline-offset: 7px;
+  cursor: default;
 }
 
 .nav-menu__link:hover {
   color: #292929;
-  text-decoration: underline;
-  text-decoration-color: #F1CDB3;
-  text-underline-offset: 7px;
-  transition: background-color 0.9s;
+  transition: color 0.9s;
 }
 
 /*-----Pets-----*/
@@ -144,7 +142,13 @@ a.active {
   background-color: #FAFAFA;
   margin-left: 20px;
   margin-right: 20px;
-  padding-bottom: 60px;
+  margin-bottom: 30px;
+  border-radius: 9px;
+}
+
+.content__card:hover {
+  background-color: #FFFFFF;
+  transition: background-color 0.9s;
 }
 
 .content__card:hover button {
@@ -177,6 +181,7 @@ a.active {
   font-size: 17px;
   line-height: 130%;
   letter-spacing: 0.06em;
+  margin-bottom: 30px;
 }
 
 .pets__navigation {

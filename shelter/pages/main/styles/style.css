@@ -85,6 +85,7 @@ ul {
 
 a.active {
   color: #FAFAFA;
+  cursor: default;
   text-decoration: underline;
   text-decoration-color: #F1CDB3;
   text-underline-offset: 7px;
@@ -92,9 +93,7 @@ a.active {
 
 .nav-menu__link:hover {
   color: #FAFAFA;
-  text-decoration: underline;
-  text-decoration-color: #F1CDB3;
-  text-underline-offset: 7px;
+  transition: color 0.9s;
 }
 
 /*----Not only-----*/
@@ -319,6 +318,7 @@ a.active {
   background-color: #FAFAFA;
   margin-left: 45px;
   margin-right: 45px;
+  border-radius: 9px;
 }
 
 .slider__card__name {
@@ -345,6 +345,12 @@ a.active {
   font-size: 17px;
   line-height: 130%;
   letter-spacing: 0.06em;
+  margin-bottom: 30px;
+}
+
+.slider__card:hover {
+  background-color: #FFFFFF;
+  transition: background-color 0.9s;
 }
 
 .slider__card:hover .slider__card__btn {
@@ -371,7 +377,7 @@ a.active {
   line-height: 130%;
   letter-spacing: 0.06em;
   color: #292929;
-  margin-top: 89px;
+  margin-top: 59px;
   margin-bottom: 100px;
   margin-left: 40%;
 }
@@ -390,6 +396,7 @@ a.active {
   align-items: center;
   max-width: 1280px;
   margin: 0 auto;
+  padding-right: 12px;
 }
 
 .help__heading {
