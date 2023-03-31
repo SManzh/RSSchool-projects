@@ -280,7 +280,8 @@ a.active {
   height: 52px;
   margin-left: 0;
   margin-right: 0;
-  margin-top: 27px;
+  margin-top: -2px;
+  flex-shrink: 0;
 }
 
 .slider__right-btn {
@@ -290,7 +291,8 @@ a.active {
   height: 52px;
   margin-left: -4px;
   margin-right: 0;
-  margin-top: 27px;
+  margin-top: -2px;
+  flex-shrink: 0;
 }
 
 .slider__right-btn img {
@@ -522,6 +524,7 @@ a.active {
   line-height: 115%;
   letter-spacing: 0.06em;
   color: #545454;
+  margin-left: 0;
 }
 
 .in-addition__legal-info {
@@ -627,6 +630,42 @@ td a {
 
   .not-only {
     flex-direction: column;
+  }
+
+  /*----------*/
+  .about {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  /*----------*/
+  .slider {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .slider__cards {
+    justify-content: space-between;
+  }
+
+  .slider__card {
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+
+  .slider__card:nth-child(3) {
+    display: none;
+  }
+
+  /*----------*/
+  .help__items {
+    justify-content: space-between;
+  }
+
+  .help__item {
+    width: 170px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
   /*----------*/
