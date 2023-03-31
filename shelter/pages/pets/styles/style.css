@@ -88,8 +88,7 @@ ul {
 
 a.active {
   color: #292929;
-  text-decoration: underline;
-  text-decoration-color: #F1CDB3;
+  text-decoration: underline solid #F1CDB3 3px;
   text-underline-offset: 7px;
   cursor: default;
 }
