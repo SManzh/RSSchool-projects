@@ -623,7 +623,7 @@ td a {
 
 /*-----Media queries-----*/
 /*-----Up to 1200px-----*/
-@media (max-width: 1199px) {
+@media (max-width: 1200px) {
   .logo {
     margin-left: 30px;
   }
@@ -770,5 +770,93 @@ td a {
 
   .footer__picture img {
     margin-top: 42px;
+  }
+}
+
+
+/*-----Media queries-----*/
+/*-----Up to 765px-----*/
+@media (max-width: 765px) {
+  .nav-menu {
+    display: none;
+  }
+
+  /*----------*/
+  .not-only__picture img {
+    width: 15em;
+    margin-left: 4em;
+  }
+
+  /*----------*/
+  .our-friends {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .slider {
+    margin-left: 15px;
+    margin-right: 15px;
+    flex-wrap: wrap;
+  }
+
+  .slider__left-btn {
+    order: 2;
+  }
+
+  .slider__right-btn {
+    order: 3;
+  }
+
+  .slider__cards {
+    width: 20em;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .slider__card:nth-child(2) {
+    display: none;
+  }
+
+  /*----------*/
+  .in-addition__text {
+    margin-left: 0;
+  }
+
+  .in-addition__picture {
+    margin: 0 auto;
+  }
+
+  .in-addition__picture img {
+    width: 10em;
+  }
+
+  .in-addition__credit-card {
+    width: 281px;
+  }
+
+  /*----------*/
+  .footer__address-and-contacts {
+    flex-wrap: wrap;
+  }
+
+  .footer__contact {
+    margin-left: 0;
+    flex-grow: 0;
+    width: 16em;
+  }
+
+  .footer__address {
+    margin-left: 0;
+    flex-grow: 0;
+  }
+
+  .footer__picture {
+    flex-grow: 0;
+  }
+
+  .footer__picture img {
+    width: 20em;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
