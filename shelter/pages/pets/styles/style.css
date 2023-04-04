@@ -492,12 +492,12 @@ td a {
   .footer__contact {
     width: 20em;
     margin-top: 10px;
-    margin-left: 0;
+    margin-left: auto;
     flex-grow: 0;
   }
 
   .footer__address {
-    margin-left: 0;
+    margin-left: auto;
     flex-grow: 0;
   }
 
@@ -519,12 +519,13 @@ td a {
 
   .footer__picture {
     flex-grow: 0;
+    margin-left: auto;
   }
 
   .footer__picture img {
     width: 16em;
     margin-top: 0.7em;
-    margin-left: 2em;
     margin-right: 0;
   }
+
 }
