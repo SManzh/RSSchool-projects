@@ -1,5 +1,5 @@
-document.addEventListener("DOMContentLoaded", function(){
-  document.querySelector(".header__burger-btn").addEventListener("click", function(){
-    document.querySelector(".header").classList.toggle("open")
-  })
+const burger = document.querySelector(".header__burger-btn");
+
+burger.addEventListener("click", () => {
+  document.querySelector(".header").classList.toggle("open")
 })
