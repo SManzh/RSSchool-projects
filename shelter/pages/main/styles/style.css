@@ -755,6 +755,10 @@ td a {
     padding-right: 30px;
   }
 
+  .slider__cards__wrapper {
+    max-width: 768px;
+  }
+
   .slider__right-btn {
     margin-left: 4px;
   }
@@ -773,6 +777,15 @@ td a {
   .slider__card:nth-child(3) {
     display: none;
   }
+
+  .slider__cards:nth-child(2) {
+    display: none;
+  }
+
+  .slider__cards:nth-child(3) {
+    display: none;
+  }
+
 
   .our-friends__btn {
     margin-left: auto;
@@ -870,7 +883,7 @@ td a {
     width: 380px;
     margin-right: 0;
     background-color: #292929;
-    padding: 100px 20px 20px 20px;
+    padding: 120px 20px 20px 20px;
     transition: transform 2.5s, visibility 1.5s;
     height: 100vh;
     text-align: center;
