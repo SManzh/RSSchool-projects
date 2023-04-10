@@ -30,6 +30,21 @@ a {
   padding-top: 29px;
 }
 
+.header.open .header__burger-btn span:nth-child(1) {
+  transform: translateX(10px) rotate(90deg);
+  transition: transform .5s;
+}
+
+.header.open .header__burger-btn span:nth-child(2) {
+  transform: translateY(0) rotate(90deg);
+  transition: transform .5s;
+}
+
+.header.open .header__burger-btn span:nth-child(3) {
+  transform: translateX(-10px) rotate(90deg);
+  transition: transform .5s;
+}
+
 .logo {
   width: 184px;
   flex-grow: 1;
@@ -293,11 +308,13 @@ a.active {
 }
 
 .slider {
+  position: relative;
   display: flex;
   align-items: center;
   margin-top: 60px;
   padding-left: 40px;
   padding-right: 40px;
+  max-width: 1280px;
 }
 
 .slider__left-btn {
@@ -340,12 +357,42 @@ a.active {
   transition: background-color 0.9s;
 }
 
-.slider__cards {
+.slider__cards__wrapper {
+  max-width: 1280px;
+  overflow: hidden;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
+  /* flex-wrap: nowrap; */
+}
+
+.slider__cards {
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
   justify-content: center;
   margin-left: 10px;
   margin-right: 10px;
+  left: 0px;
+}
+
+@keyframes move-right {
+  from {left: -1102px;}
+  to {left: -2204px;}
+}
+
+.transition-right {
+  animation-name: move-right;
+  animation-duration: 3s;
+}
+
+@keyframes move-left {
+  from {left: -1102px;}
+  to {left: 0px;}
+}
+
+.transition-left {
+  animation-name: move-left;
+  animation-duration: 3s;
 }
 
 .slider__card {
@@ -812,10 +859,42 @@ td a {
 
   .header__burger-btn {
     display: block;
+    z-index: 999;
   }
 
   .nav-menu {
-    display: none;
+    position: absolute;
+    visibility: hidden;
+    right: -380px;
+    top: 0;
+    width: 380px;
+    margin-right: 0;
+    background-color: #292929;
+    padding: 100px 20px 20px 20px;
+    transition: transform 2.5s, visibility 1.5s;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .nav-menu__element{
+    margin-bottom: 40px;
+  } 
+
+  .nav-menu__link {
+    font-size: 32px;
+    line-height: 51px;
+  }
+
+  .header.open .nav-menu {
+    visibility: visible;
+    transform: translateX(-100%);
+    transition: transform 2.5s, visibility 1.5s;
+  }
+  
+  .nav-menu__list {
+    display: block;
+    padding-top: 90px;
   }
 
   /*----------*/
