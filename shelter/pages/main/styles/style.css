@@ -308,11 +308,13 @@ a.active {
 }
 
 .slider {
+  position: relative;
   display: flex;
   align-items: center;
   margin-top: 60px;
   padding-left: 40px;
   padding-right: 40px;
+  max-width: 1280px;
 }
 
 .slider__left-btn {
@@ -355,12 +357,42 @@ a.active {
   transition: background-color 0.9s;
 }
 
-.slider__cards {
+.slider__cards__wrapper {
+  max-width: 1280px;
+  overflow: hidden;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
+  /* flex-wrap: nowrap; */
+}
+
+.slider__cards {
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
   justify-content: center;
   margin-left: 10px;
   margin-right: 10px;
+  left: 0px;
+}
+
+@keyframes move-right {
+  from {left: -1102px;}
+  to {left: -2204px;}
+}
+
+.transition-right {
+  animation-name: move-right;
+  animation-duration: 3s;
+}
+
+@keyframes move-left {
+  from {left: -1102px;}
+  to {left: 0px;}
+}
+
+.transition-left {
+  animation-name: move-left;
+  animation-duration: 3s;
 }
 
 .slider__card {
@@ -840,8 +872,9 @@ td a {
     background-color: #292929;
     padding: 100px 20px 20px 20px;
     transition: transform 2.5s, visibility 1.5s;
-    height: 823px;
+    height: 100vh;
     text-align: center;
+    overflow: hidden;
   }
 
   .nav-menu__element{
@@ -856,7 +889,6 @@ td a {
   .header.open .nav-menu {
     visibility: visible;
     transform: translateX(-100%);
-    display: block;
     transition: transform 2.5s, visibility 1.5s;
   }
   
