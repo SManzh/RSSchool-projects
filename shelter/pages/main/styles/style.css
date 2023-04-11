@@ -875,18 +875,18 @@ td a {
     z-index: 999;
   }
 
-  .nav-menu {
-    position: absolute;
-    visibility: hidden;
-    right: -380px;
-    top: 0;
+  .header .nav-menu {
+    position: fixed;
+    top: 0px;
+    right: 0px;
     width: 380px;
-    margin-right: 0;
-    background-color: #292929;
-    padding: 120px 20px 20px 20px;
-    transition: transform 2.5s, visibility 1.5s;
-    height: 100vh;
-    text-align: center;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    background: rgba(41, 41, 41, 1);
+    transform: translateX(100%);
+    transition: transform 1.5s, background-color 1.2s;
+    display: flex;
     overflow: hidden;
   }
 
@@ -900,9 +900,9 @@ td a {
   }
 
   .header.open .nav-menu {
-    visibility: visible;
-    transform: translateX(-100%);
-    transition: transform 2.5s, visibility 1.5s;
+    transform: translate(0, 0);
+    transition: transform 1.5s, background-color 1.2s;
+    z-index: 111;
   }
   
   .nav-menu__list {

@@ -26,6 +26,22 @@
   height: 120px;
 }
 
+
+.header.open .header__burger-btn span:nth-child(1) {
+  transform: translateX(10px) rotate(90deg);
+  transition: transform .5s;
+}
+
+.header.open .header__burger-btn span:nth-child(2) {
+  transform: translateY(0) rotate(90deg);
+  transition: transform .5s;
+}
+
+.header.open .header__burger-btn span:nth-child(3) {
+  transform: translateX(-10px) rotate(90deg);
+  transition: transform .5s;
+}
+
 .logo {
   width: 184px;
   flex-grow: 1;
@@ -431,6 +447,55 @@ td a {
   .logo {
     margin-left: 20px;
     margin-top: 2px;
+  }
+
+  .header__burger-btn {
+    display: block;
+    z-index: 999;
+  }
+
+  .header .nav-menu {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: 380px;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    background: #FAFAFA;
+    transform: translateX(100%);
+    transition: transform 1.5s, background-color 1.2s;
+    display: flex;
+    overflow: hidden;
+  }
+
+  .nav-menu__element{
+    margin-bottom: 40px;
+  } 
+
+  ul {
+    padding-inline-start: 0px;
+  }
+  
+  .nav-menu__list {
+    display: block;
+    padding-top: 100px;
+  }
+  
+  .nav-menu__element {
+    list-style: none;
+    padding: 0 17px;
+  }
+
+  .nav-menu__link {
+    font-size: 32px;
+    line-height: 51px;
+  }
+
+  .header.open .nav-menu {
+    transform: translate(0, 0);
+    transition: transform 1.5s, background-color 1.2s;
+    z-index: 111;
   }
 
   .header__burger-btn {
