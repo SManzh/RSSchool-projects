@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
         click(square);
       })
 
-      // cntrl and left click
+      // ctrl and left click
       square.oncontextmenu = function (e) {
         e.preventDefault();
         addFlag(square);
